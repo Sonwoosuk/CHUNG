@@ -1,0 +1,149 @@
+/*GmarketSans*/
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('font/GmarketSansLight.eot');
+    src: url('font/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('font/GmarketSansLight.woff2') format('woff2'),
+         url('font/GmarketSansLight.woff') format('woff'),
+         url('font/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('font/GmarketSansMedium.eot');
+    src: url('font/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+         url('font/GmarketSansMedium.woff2') format('woff2'),
+         url('font/GmarketSansMedium.woff') format('woff'),
+         url('font/GmarketSansMedium.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('font/GmarketSansBold.eot');
+    src: url('font/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+         url('font/GmarketSansBold.woff2') format('woff2'),
+         url('font/GmarketSansBold.woff') format('woff'),
+         url('font/GmarketSansBold.ttf') format("truetype");
+    font-display: swap;
+} 
+
+/*FontAwesome*/
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight:900;
+    src:	local('FontAwesome'),
+    url('../plugin/fontawesome/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+    url('../plugin/fontawesome/webfonts/fa-solid-900.woff') format('woff'),
+    url('../plugin/fontawesome/webfonts/fa-solid-900.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight:300;
+    src:	local('FontAwesome'),
+    url('../plugin/fontawesome/webfonts/fa-light-300.eot?#iefix') format('embedded-opentype'),
+    url('../plugin/fontawesome/webfonts/fa-light-300.woff') format('woff'),
+    url('../plugin/fontawesome/webfonts/fa-light-300.otf') format('opentype');
+}
+
+/*Pretendard*/
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('font/Pretendard-Black.woff2') format('woff2'), url('font/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('font/Pretendard-ExtraBold.woff2') format('woff2'), url('font/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('font/Pretendard-Bold.woff2') format('woff2'), url('font/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('font/Pretendard-SemiBold.woff2') format('woff2'), url('font/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('font/Pretendard-Medium.woff2') format('woff2'), url('font/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('font/Pretendard-Regular.woff2') format('woff2'), url('font/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('font/Pretendard-Light.woff2') format('woff2'), url('font/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('font/Pretendard-ExtraLight.woff2') format('woff2'), url('font/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('font/Pretendard-Thin.woff2') format('woff2'), url('font/Pretendard-Thin.woff') format('woff');
+}
+
+/*Ubuntu*/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('font/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('font/Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('font/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('font/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {font-family: "Pretendard", sans-serif; font-weight: 400;}
+

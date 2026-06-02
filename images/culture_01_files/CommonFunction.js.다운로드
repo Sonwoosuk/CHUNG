@@ -1,0 +1,857 @@
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 영문 숫자 _ 허용
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function checkOnlyAlphabetNumberBar(todo){
+	var checkRe=/^[a-zA-Z0-9_]+$/;
+	return checkRe.test(todo);
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 한글 입력 금지
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function checkOnlyAlphabetNumber(todo){
+	var checkRe=/^[a-zA-Z0-9]+$/;
+	return checkRe.test(todo);
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 띄어쓰기 입력 금지
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function checkSpace(todo){
+	
+	var reg = true;
+
+	if(todo.search(/\s/) != -1) { //띄어쓰기 있음
+		reg = false;
+	}
+
+	return reg;
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 비밀번호 영문 대/소문자 숫자 조합, 공백 있는지 체크
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function checkPasswdAlphabetNumber(todo){
+	
+	var reg1 = true;
+
+	if(todo.search(/\s/) != -1) { 
+		//있음
+		reg1 = false;
+	} else { 
+		//없음
+		reg1 = true;
+	}
+
+	var reg2 = /[a-z]/g;    
+	var reg3 = /[0-9]/g;
+	var reg4 = /[A-Z]/g;
+
+	return (reg1 &&  reg2.test(todo)  &&  reg3.test(todo) &&  reg4.test(todo));
+
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 이메일 정규식
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function checkEmail(todo){
+	var emailRule = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;//이메일 정규식
+	return emailRule.test(todo);
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 확장자 추출
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function getFileExtension(filePath){
+	var index = -1;
+	index = filePath.lastIndexOf('.');
+
+	var extension = "";
+
+	if(index != -1)
+	{
+		extension = filePath.substring(index+1, filePath.len);
+	}
+	else
+	{
+		extension = "";
+	}
+
+	return extension;
+} 
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 파일 업로드 확장자 체크
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function uploadCheckFile(obj, maxSize)
+{
+
+  var value = obj.value;
+
+	if (value != "")
+	{
+		uploadCheckfileMaxsize(obj, maxSize);
+
+		var chk = "";
+
+		var src = getFileExtension(value);
+		if (src == "") {
+			alert('올바른 파일을 입력하세요!');
+			resetFile(obj);
+			return;
+		}
+
+		var ext = src.toLowerCase();
+		
+		var ext_arr = new Array("jpg","jpeg","peg","gif","png","bmp","hwp","doc","docx","xls","xlsx","pdf","txt","ppt","pptx","zip","alz","mp4");
+		
+		for( var i=0; i < ext_arr.length; i++ ) {
+			if (ext_arr[i] == ext)
+			{
+				chk = "Y";
+				break;
+			}
+		}
+
+		if (chk == "")
+		{
+			alert('"'+ext+'" 는 금지된 확장자입니다.');
+			resetFile(obj);
+			return;
+		}
+	}
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 파일 업로드 확장자 체크 - 이미지
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function uploadCheckImg(obj, maxSize)
+{
+
+  var value = obj.value;
+
+	if (value != "")
+	{
+		uploadCheckfileMaxsize(obj, maxSize);
+
+		var chk = "";
+
+		var src = getFileExtension(value);
+		if (src == "") {
+			alert('올바른 파일을 입력하세요!');
+			resetFile(obj);
+			return;
+		}
+
+		var ext = src.toLowerCase();
+		
+		var ext_arr = new Array("jpg","jpeg","peg","gif","png","bmp");
+		
+		for( var i=0; i < ext_arr.length; i++ ) {
+			if (ext_arr[i] == ext)
+			{
+				chk = "Y";
+				break;
+			}
+		}
+
+		if (chk == "")
+		{
+			alert('"'+ext+'" 는 이미지 확장자가 아닙니다.');
+			resetFile(obj);
+			return;
+		}
+	}
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 파일 업로드 확장자 체크 - pdf
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function uploadCheckPdf(obj, maxSize)
+{
+
+  var value = obj.value;
+
+	if (value != "")
+	{
+		uploadCheckfileMaxsize(obj, maxSize);
+
+		var chk = "";
+
+		var src = getFileExtension(value);
+		if (src == "") {
+			alert('올바른 파일을 입력하세요!');
+			resetFile(obj);
+			return;
+		}
+
+		var ext = src.toLowerCase();
+		
+		var ext_arr = new Array("pdf");
+		
+		for( var i=0; i < ext_arr.length; i++ ) {
+			if (ext_arr[i] == ext)
+			{
+				chk = "Y";
+				break;
+			}
+		}
+
+		if (chk == "")
+		{
+			alert('"'+ext+'" 는 PDF 확장자가 아닙니다.');
+			resetFile(obj);
+			return;
+		}
+	}
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 업로드 파일 용량 체크
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function uploadCheckfileMaxsize(obj, maxSize)
+{
+	var file_chk = obj.files;
+	
+	if(file_chk[0].size > 1024 * 1024 * maxSize){
+		var now_size = file_chk[0].size / 1024 / 1024;
+		now_size = now_size.toFixed(2);
+		// 용량 초과시 경고후 해당 파일의 용량도 보여줌
+		//alert(maxSize+'MB 이내의 파일만 등록할 수 있습니다.\n\n' + '현재 파일 용량 : ' + (Math.round(file_chk[0].size / 1024 / 1024 * 100) / 100) + 'MB');
+		alert(maxSize+'MB 이내의 파일만 등록할 수 있습니다.\n\n' + '현재 파일 용량 : ' + now_size + 'MB');
+		resetFile(obj);
+		return;
+	}
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 초기화
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function resetFile(obj){
+	//obj.outerHTML = obj.outerHTML;
+
+	var id = obj.id;
+
+	var agent = navigator.userAgent.toLowerCase();
+	if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ){
+		// ie 일때 
+		$("#"+id).replaceWith( $("#"+id).clone(true) );
+	} else {
+		// other browser 일때
+		$("#"+id).val("");
+	}
+}
+
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// magnific-popup
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function openPopup(url, height, classNm){
+	$.magnificPopup.open({
+		items: {
+			src: url
+		},
+		type: 'iframe',
+		mainClass: classNm,
+		closeOnBgClick: true,
+		fixedContentPos: true,
+		preloader: false,
+		iframe: {
+			markup: '<div style="height:'+height+'px;">'+
+            '	<div class="mfp-iframe-scaler" >'+
+            // '		<div class="mfp-close"></div>'+
+            '		<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+            '	</div>'+
+            '</div>'
+		},
+		callbacks: {
+			beforeOpen: function() {
+			}
+		}
+	});
+}
+
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 이미지 사이즈 조절
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function img_ReSize(img_id, width){
+	var imgWidth =  document.getElementById(img_id).width;
+
+	if(imgWidth > width){
+		document.getElementById(img_id).width = width;
+	}
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 공백만 입력했는지 체크
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fn_empty(text){
+	text = $.trim(text);
+
+	return text;
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// form 체크
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fnDefaultTip(id, msg)
+{
+	id.parent().find("p.hint").remove();
+	id.parent().append('<p class="hint"><span class="red">'+msg+'</span></p>');
+}
+
+function fnUseOk(id, msg)
+{
+	id.parent().find("p.hint").remove();
+	id.parent().append('<p class="hint"><span class="green">'+msg+'</span></p>');
+}
+
+function fnRadioCheckTip(id, msg)
+{
+	id.parent().parent().find("p.hint").remove();
+	id.parent().parent().append('<p class="hint"><span class="red">'+msg+'</span></p>');
+}
+
+$(document).on("keyup change",".please",function(){ 
+	$(this).parent().find("p.hint").remove();
+});
+
+$(document).on("click",".r_please, .c_please",function(){ 
+	$(this).parent().parent().find("p.hint").remove();
+});
+
+
+$(document).on("change",".s_please",function(){ 
+	$(this).parent().find("p.hint").remove();
+});
+
+$(document).on("change",".file_upload",function(){ //파일 업로드
+	$(this).parent().find("p.hint").remove();
+});
+
+function fn_radio_check_please(obj, msg){
+	fnRadioCheckTip(obj, msg);
+
+	obj.eq(0).focus();
+}
+
+function fn_input_please(obj, msg){
+	fnDefaultTip(obj, msg);
+
+	obj.focus();
+}
+
+function fn_input_ok(obj, msg){
+	fnUseOk(obj, msg);
+}
+
+
+function fn_file_please(obj, msg){
+	fn_radio_check_please(obj, msg);
+
+	obj.focus();
+}
+
+function fn_input_value(obj){
+	obj.val(fn_empty(obj.val()));
+
+	return obj.val();
+}
+
+
+function fn_radio_value(obj){
+	name = obj.attr("name");
+	chk = $(':radio[name="'+name+'"]').is(':checked');
+	
+	if (chk == false)
+	{
+		return "";
+	}else{
+		return $(':radio[name="'+name+'"]:checked').val();
+	}
+}
+
+function fn_checkbox_value(obj){
+	name = obj.attr("name");
+	chk = $(':checkbox[name="'+name+'"]').is(':checked');
+	
+	if (chk == false)
+	{
+		return "";
+	}else{
+		var val = $(':checkbox[name="'+name+'"]:checked').map(function(){ 
+			return $(this).val();
+		}).get().join();
+
+		return val;
+	}
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+//	숫자입력하면 콤마
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("keyup",".comma",function(){ 
+	val = $(this).val().replace(/[^0-9]/gi,"");
+	$(this).val(Set_js_Comma(val));
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+//	콤마 찍기
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function Set_js_Comma(n){ 
+	n = Un_js_Comma(n);
+	return n.replace(/(\d)(?=(?:\d{3})+(?!\d))/g,'$1,'); 
+} 
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+//	콤마 풀기
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function Un_js_Comma(n){ 
+  str = String(n);
+  return str.replace(/,/g,"");
+} 
+
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 이미지 띄우기
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function initMagnificPopup(){
+	$('.magnific-image-popup').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		fixedContentPos: true,
+		cursor: 'mfp-zoom'
+	});
+}
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+//	html 로딩후 실행
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).ready(function() {
+	
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	복사
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$(document).on("click",".copy-url",function(){ 
+		lang = $(this).attr("data-lang");
+		
+		$(this).parent().find(".copy-text").select();
+		document.execCommand("copy");
+		fn_alim_msg('<i class="fa-light fa-clone"></i> '+lang);
+	});
+	
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	달력
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$( ".s_date" ).datepicker({
+		showButtonPanel: true,
+		dateFormat:"yy-mm-dd",
+		changeMonth: true,
+		changeYear: true,
+		showOtherMonths: true,
+		selectOtherMonths: false
+	});
+
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	숫자만 입력
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$('.numChk').keyup(function(e) {
+		$(this).val($(this).val().replace(/[^0-9,]/gi,""));
+	});
+
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	숫자만 입력
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$('.numChk').blur(function(e) {
+		$(this).val($(this).val().replace(/[^0-9,]/gi,""));
+	});
+
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	전화번호 입력
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$('.telChk').keyup(function(e) {
+		$(this).val($(this).val().replace(/[^0-9-]/gi,""));
+	});
+
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	전화번호 입력
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$('.telChk').blur(function(e) {
+		$(this).val($(this).val().replace(/[^0-9-]/gi,""));
+	});
+
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	//	다음칸으로 이동
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	$(".next_input").keyup (function () {
+		var charLimit = $(this).attr("maxlength");
+		if (this.value.length >= charLimit) {
+			$(this).nextAll('input').first().focus();
+			var len = $(this).nextAll('input').first().val().length;
+			$(this).nextAll('input').first()[0].setSelectionRange(len, len);
+			return false;
+		}
+	});
+	
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	// 파일 업로드 폼
+	//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+	var fileTarget = $('.file_upload .inputFile');
+	fileTarget.on('change', function(){ // 값이 변경되면
+			var filename = "";
+
+			if(window.FileReader){ // modern browser
+				if ($(this)[0].files[0])
+				{
+					filename = $(this)[0].files[0].name;
+				}else{
+					filename = "";
+				}
+				
+			}else { // old IE
+				filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+			}
+
+			// 추출한 파일명 삽입
+			$(this).siblings('.upload-name').val(filename);
+	});
+
+
+	$('.popup-youtube').magnificPopup({
+		disableOn: 280,
+		type: 'iframe',
+		mainClass: 'mfp-fade movie_popup',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+	
+	initMagnificPopup();
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 파일 업로드창 열기
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("click",".upload-name",function(){ 
+	$(this).next("label").trigger("click");
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 부드럽게 이동
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("click",".go_scroll",function(){ 
+	$('html, body').animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 800);
+	return false;
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fn_error(){
+	alert("잠시 후 다시 이용해주세요.");
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 다음 주소찾기
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function openDaumPostcode(zcode,addr1,addr2) {
+	new daum.Postcode({
+		oncomplete: function(data) {
+			// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+			// 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+			// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+			var roadAddr = data.roadAddress; // 도로명 주소 변수
+			var extraRoadAddr = ''; // 참고 항목 변수
+
+			// 법정동명이 있을 경우 추가한다. (법정리는 제외)
+			// 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+			if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+				extraRoadAddr += data.bname;
+			}
+			// 건물명이 있고, 공동주택일 경우 추가한다.
+			if(data.buildingName !== '' && data.apartment === 'Y'){
+			   extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+			}
+			// 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+			if(extraRoadAddr !== ''){
+				extraRoadAddr = ' (' + extraRoadAddr + ')';
+			}
+
+			roadAddr += extraRoadAddr;
+
+			// 우편번호와 주소 정보를 해당 필드에 넣는다.
+			//document.getElementById('sample4_postcode').value = data.zonecode;
+			if (document.getElementById(zcode))
+			{
+				document.getElementById(zcode).value = data.zonecode;
+			}
+
+			if (document.getElementById(addr1))
+			{
+				document.getElementById(addr1).value = roadAddr + " ";
+			}
+
+			if (document.getElementById(addr2))
+			{
+				document.getElementById(addr2).focus();
+			}
+		}
+	}).open();
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 빈 공백 문자열 CHECK
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function isEmpty(s) {   
+    return ((s == null) || (s.length == 0))
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 인터파크 예매
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fnTicketBooking(bizcode, p_code, user_id, bpk)
+{
+    var frmTicketBooking;
+    frmTicketBooking = document.createElement("form");
+    frmTicketBooking.name = "frmBooking";
+    frmTicketBooking.action = "https://ticket.interpark.com/Partner/Certify/BizBooking.asp";
+    frmTicketBooking.target = "wndBooking";
+    frmTicketBooking.method = "post";
+    document.body.appendChild(frmTicketBooking);
+
+    var o;
+    o = document.createElement("input");
+    o.name = "bp1";
+    o.type = "hidden";
+    o.value = bizcode; //거래처코드
+    frmTicketBooking.appendChild(o);
+
+    o = document.createElement("input");
+    o.name = "bp2";
+    o.type = "hidden";
+    o.value = p_code; //상품코드
+    frmTicketBooking.appendChild(o);
+
+    o = document.createElement("input");
+    o.name = "bp3";
+    o.type = "hidden";
+    o.value = user_id;
+    frmTicketBooking.appendChild(o);
+
+	o = document.createElement("input");
+    o.name = "bpk";
+    o.type = "hidden";
+    o.value = bpk;
+    frmTicketBooking.appendChild(o);
+
+    try
+    {
+        var loc = "";
+        win = window.open(loc,"wndBooking","top=10, left=10, width=900, height=682, fullscreen=no, menubar=no, status=no, toolbar=no, location=no, scrollbars=yes, resizable=yes");
+        if(win==null) {
+            alert("팝업창이 제한되어 있어서 예매창을 열 수 없습니다.");
+        }
+        else 
+        {
+            frmTicketBooking.submit();
+            win.focus();
+        }
+    }
+    catch(e)
+    {
+        alert("팝업창이 제한되어 있어서 예매창을 열 수 없습니다.");
+    }
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 인터파크 예매 확인
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fnTicketCancel(bizcode, user_id, bpk)
+{
+    var frmTicketCancel;
+    frmTicketCancel = document.createElement("form");
+    frmTicketCancel.name = "frmCancel";
+    frmTicketCancel.action = "https://ticket.interpark.com/Partner/Certify/BizCancel.asp";
+    frmTicketCancel.target = "wndCancel";
+    frmTicketCancel.method = "post";
+    document.body.appendChild(frmTicketCancel);
+
+    var o;
+    o = document.createElement("input");
+    o.name = "cp1";
+    o.type = "hidden";
+    o.value = bizcode;
+    frmTicketCancel.appendChild(o);
+
+    o = document.createElement("input");
+    o.name = "cp2";
+    o.type = "hidden";
+    o.value = user_id;
+    frmTicketCancel.appendChild(o);
+
+    o = document.createElement("input");
+    o.name = "cpk";
+    o.type = "hidden";
+    o.value = bpk;
+    frmTicketCancel.appendChild(o);
+
+try
+    {
+        var loc = "";
+        win = window.open(loc,"wndCancel","top=10, left=10, width=900, height=682, fullscreen=no, menubar=no, status=no, toolbar=no, location=no, scrollbars=yes, resizable=yes");
+        if(win==null) {
+            alert("팝업창이 제한되어 있어서 예매창을 열 수 없습니다.");
+        }
+        else
+        {
+            frmTicketCancel.submit();
+            win.focus();
+        }
+    }
+    catch(e)
+    {
+        alert("팝업창이 제한되어 있어서 예매창을 열 수 없습니다.");
+    }
+}
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+var preview_minus = 40;
+var preview_per = 0.02;
+
+var way_minus = 0;
+var way_per = 0.1;
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 지원서 미리보기 - 사용자 페이지
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fn_apply_preview(no, user_id){	//미리보기
+		
+	fn_pop_height("#preview_pop", preview_minus, preview_per);
+
+	var mode = "preview";
+	
+	$('.tip_pop#preview_pop').addClass('show');
+	$('.tip_bg').addClass('show');
+	
+	$('#preview_pop .cont_wrap').scrollTop(0);
+
+	$.ajax({
+		type: "post",  
+		dataType: "html",
+		url: "state_edit.php", 
+		async: false,
+		data: {no:no, user_id:user_id, mode:mode},   
+		success: function(re) {
+
+			$("#preview_pop .cont_wrap").html(re);
+			
+		},error: function(xhr, status, error) {
+			alert('잠시 후 다시 이용해주세요.');
+		}
+	});
+	
+	$("html").css("overflow-y", "hidden");
+}
+
+function fn_pop_height(id, minus, per){
+	t = window.innerHeight * per;
+
+	h = window.innerHeight - minus - (t * 2);
+
+	$('.tip_pop'+id+'').css('top', t+'px');
+	$('.tip_pop'+id+' .cont_wrap').css('height', h+'px');
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 지원서 미리보기 - 관리자 페이지
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fn_apply_preview_adm(no, user_id){	//미리보기
+	
+	var w = screen.availWidth;
+	var left = (w - 860) / 2;
+
+	var h = screen.availHeight;
+	var height = h - 100;
+
+	window.open("preview.php?no="+no+"&user_id="+user_id, "apply", "width=930, height="+height+", top=20, left="+left+", fullscreen=no, menubar=no, status=no, toolbar=no, location=no, scrollbars=yes");
+
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 응시지원서 작성요령
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("click",".apply_top .pop_view",function(){
+	fn_pop_height("#way_pop", way_minus, way_per);
+
+	$('.tip_pop#way_pop').addClass('show');
+	$('.tip_bg').addClass('show');
+	
+	$('#way_pop .cont_wrap').scrollTop(0);
+
+	$("html").css("overflow-y", "hidden");
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 자기소개서 작성요령
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("click",".introduce .pop_view",function(){ 
+	$('.tip_pop#introduce_pop').addClass('show');
+	$('.tip_bg').addClass('show');
+
+	$("html").css("overflow-y", "hidden");	
+});
+
+$(window).resize(function(){
+	if ($("#preview_pop").hasClass("show")) fn_pop_height("#preview_pop", preview_minus, preview_per);
+	if ($("#way_pop").hasClass("show")) fn_pop_height("#way_pop", way_minus, way_per);
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 응시표 인쇄
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function fn_apply_print(){	
+	
+	temp = $("#apply_print").html();
+	$("#print_area").html("<div class='board_view apply'><div class='apply_print'>"+temp+"</div></div>");
+
+	$(".wrap").addClass("print_hide");
+
+	window.print();
+	
+	setTimeout(function() {
+		$("#print_area").html("");
+		$(".wrap").removeClass("print_hide");
+	}, 1000);
+
+}
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 인쇄
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("click",".print_btn",function(){
+	window.print();
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 링크복사
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+$(document).on("click","#copyLink",function(){ 
+	$(".copy-url").select();
+	document.execCommand("copy");
+	alert("복사 되었습니다.");
+});
+
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+// 유튜브 사이즈 조절
+//〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
+function resizeYoutube() {
+	$("iframe").each(function() {
+		var url = $(this).attr("src");
+
+		if (url.includes("youtube.com/embed/") || url.includes("player.vimeo.com/video/") ){
+			$(this).css("width", "100%");
+			$(this).css("height", Math.ceil(parseInt($(this).css("width")) * 480 / 854) + "px");
+		}
+	});
+}

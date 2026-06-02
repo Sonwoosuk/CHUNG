@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/common.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/art-hall.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <title>충청남도 문화예술회관 | 충남문화관광재단</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html" aria-label="충남문화관광재단 홈으로 이동">
+          <img src="images/logo.png" alt="충남문화관광재단" />
+        </a>
+      </h1>
+      <nav class="header__gnb" aria-label="주요 메뉴">
+        <ul class="gnb__list">
+          <li class="gnb__item"><a href="#" class="gnb__link">사업안내</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">예술지원</a></li>
+              <li><a href="#" class="gnb__sub-link">문화사업</a></li>
+              <li><a href="#" class="gnb__sub-link">예술교육</a></li>
+              <li><a href="#" class="gnb__sub-link">예술복지</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">알림공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">공지사항</a></li>
+              <li><a href="#" class="gnb__sub-link">공모·입찰</a></li>
+              <li><a href="#" class="gnb__sub-link">채용공고</a></li>
+              <li><a href="#" class="gnb__sub-link">언론보도</a></li>
+              <li><a href="#" class="gnb__sub-link">뉴스레터</a></li>
+              <li><a href="#" class="gnb__sub-link">관련소식</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">소통공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">발간자료</a></li>
+              <li><a href="#" class="gnb__sub-link">서식자료</a></li>
+              <li><a href="#" class="gnb__sub-link">의견청취</a></li>
+              <li><a href="#" class="gnb__sub-link">연간행사</a></li>
+              <li><a href="#" class="gnb__sub-link">정책대시보드</a></li>
+              <li><a href="#" class="gnb__sub-link">클린라인</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item gnb__item--active"><a href="art-hall.html" class="gnb__link">문화공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="art-hall.html" class="gnb__sub-link gnb__sub-link--active">충청남도 문화예술회관</a></li>
+              <li><a href="arco-center.html" class="gnb__sub-link">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html" class="gnb__sub-link">CN갤러리</a></li>
+              <li><a href="creation-studio.html" class="gnb__sub-link">충남 창작스튜디오</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">정보공개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">정보공개 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">인권경영</a></li>
+              <li><a href="#" class="gnb__sub-link">윤리경영</a></li>
+              <li><a href="#" class="gnb__sub-link">ESG경영</a></li>
+              <li><a href="#" class="gnb__sub-link">적극행정</a></li>
+              <li><a href="#" class="gnb__sub-link">경영공시</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">재단소개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">인사말</a></li>
+              <li><a href="#" class="gnb__sub-link">경영목표</a></li>
+              <li><a href="#" class="gnb__sub-link">연혁</a></li>
+              <li><a href="#" class="gnb__sub-link">CI/BI·캐릭터</a></li>
+              <li><a href="#" class="gnb__sub-link">조직도</a></li>
+              <li><a href="#" class="gnb__sub-link">SNS</a></li>
+              <li><a href="#" class="gnb__sub-link">오시는길</a></li>
+              <li><a href="#" class="gnb__sub-link">유관·협약기관</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">문화기부</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">문화CF 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">특별한 기부</a></li>
+              <li><a href="#" class="gnb__sub-link">기부금 사용처</a></li>
+              <li><a href="#" class="gnb__sub-link">기부소식</a></li>
+              <li><a href="#" class="gnb__sub-link">기부하기</a></li>
+              <li><a href="#" class="gnb__sub-link">나의 기부 현황 보기</a></li>
+              <li><a href="#" class="gnb__sub-link">명예의 전당</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__utils">
+        <a href="#" class="utils__login">
+          <i class="fa-regular fa-circle-user" aria-hidden="true"></i>
+          <span>로그인 / 회원가입</span>
+        </a>
+        <button class="utils__search" type="button" aria-label="검색">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+        <button class="utils__hamburger" type="button" aria-label="전체 메뉴" aria-expanded="false" id="hamburgerBtn">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEGA MENU -->
+  <nav class="mega-menu" id="megaMenu" aria-label="전체 메뉴" aria-hidden="true">
+    <div class="mega-menu__inner">
+      <div class="mega-menu__row"><span class="mega-menu__title">사업안내</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">예술지원</a></li><li><a href="#" class="mega-menu__sub-link">문화사업</a></li><li><a href="#" class="mega-menu__sub-link">예술교육</a></li><li><a href="#" class="mega-menu__sub-link">예술복지</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">알림공간</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">공지사항</a></li><li><a href="#" class="mega-menu__sub-link">공모·입찰</a></li><li><a href="#" class="mega-menu__sub-link">채용공고</a></li><li><a href="#" class="mega-menu__sub-link">언론보도</a></li><li><a href="#" class="mega-menu__sub-link">뉴스레터</a></li><li><a href="#" class="mega-menu__sub-link">관련소식</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">소통공간</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">발간자료</a></li><li><a href="#" class="mega-menu__sub-link">서식자료</a></li><li><a href="#" class="mega-menu__sub-link">의견청취</a></li><li><a href="#" class="mega-menu__sub-link">연간행사</a></li><li><a href="#" class="mega-menu__sub-link">정책대시보드</a></li><li><a href="#" class="mega-menu__sub-link">클린라인</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">문화공간</span><ul class="mega-menu__sub"><li><a href="art-hall.html" class="mega-menu__sub-link">충청남도 문화예술회관</a></li><li><a href="arco-center.html" class="mega-menu__sub-link">아르코공연연습센터@서천</a></li><li><a href="cn-gallery.html" class="mega-menu__sub-link">CN갤러리</a></li><li><a href="creation-studio.html" class="mega-menu__sub-link">충남 창작스튜디오</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">정보공개</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">정보공개 안내</a></li><li><a href="#" class="mega-menu__sub-link">인권경영</a></li><li><a href="#" class="mega-menu__sub-link">윤리경영</a></li><li><a href="#" class="mega-menu__sub-link">ESG경영</a></li><li><a href="#" class="mega-menu__sub-link">적극행정</a></li><li><a href="#" class="mega-menu__sub-link">경영공시</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">재단소개</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">인사말</a></li><li><a href="#" class="mega-menu__sub-link">경영목표</a></li><li><a href="#" class="mega-menu__sub-link">연혁</a></li><li><a href="#" class="mega-menu__sub-link">CI/BI·캐릭터</a></li><li><a href="#" class="mega-menu__sub-link">조직도</a></li><li><a href="#" class="mega-menu__sub-link">SNS</a></li><li><a href="#" class="mega-menu__sub-link">오시는길</a></li><li><a href="#" class="mega-menu__sub-link">유관·협약기관</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">문화기부</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">문화CF 안내</a></li><li><a href="#" class="mega-menu__sub-link">특별한 기부</a></li><li><a href="#" class="mega-menu__sub-link">기부금 사용처</a></li><li><a href="#" class="mega-menu__sub-link">기부소식</a></li><li><a href="#" class="mega-menu__sub-link">기부하기</a></li><li><a href="#" class="mega-menu__sub-link">나의 기부 현황 보기</a></li><li><a href="#" class="mega-menu__sub-link">명예의 전당</a></li></ul></div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- 브레드크럼 -->
+    <div class="breadcrumb wow fadeInUp" data-wow-duration="0.8s">
+      <div class="breadcrumb__inner">
+        <ul class="breadcrumb__list">
+          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#">문화공간</a></li>
+          <li><span>충청남도 문화예술회관</span></li>
+        </ul>
+        <div class="breadcrumb__actions">
+          <button aria-label="링크 복사" onclick="navigator.clipboard.writeText(location.href)">
+            <i class="fa-solid fa-link"></i>
+          </button>
+          <button aria-label="공유하기">
+            <i class="fa-solid fa-share-nodes"></i>
+          </button>
+          <button aria-label="인쇄" onclick="window.print()">
+            <i class="fa-solid fa-print"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title-section ">
+      <div class="page-title-section__inner">
+        <p class="page-title-section__category">문화공간</p>
+        <h2 class="page-title-section__title">충청남도 문화예술회관</h2>
+
+        <!-- 서브 네비게이션 (탭형) -->
+        <nav class="page-sub-nav" aria-label="문화공간 메뉴">
+          <div class="page-sub-nav__wrap">
+            <div class="page-sub-nav__slider" id="subNavSlider"></div>
+            <ul class="page-sub-nav__list" id="subNavList">
+              <li><a href="art-hall.html" class="page-sub-nav__link page-sub-nav__link--active">충청남도 문화예술회관</a></li>
+              <li><a href="arco-center.html" class="page-sub-nav__link">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html" class="page-sub-nav__link">CN갤러리</a></li>
+              <li><a href="creation-studio.html" class="page-sub-nav__link">충남 창작스튜디오</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 콘텐츠 영역 -->
+    <section class="page-content">
+      <div class="page-content__inner">
+
+        <!-- 내부 탭 -->
+        <nav class="content-tab " aria-label="콘텐츠 탭">
+          <ul class="content-tab__list">
+            <li><button class="content-tab__btn content-tab__btn--active" data-tab="performance">기획공연 안내</button></li>
+            <li><button class="content-tab__btn" data-tab="ticket">티켓예매</button></li>
+            <li><button class="content-tab__btn" data-tab="guide">공연예매 안내</button></li>
+          </ul>
+        </nav>
+
+        <!-- 기획공연 안내 -->
+        <div class="content-panel content-panel--active " id="tab-performance">
+
+          <p class="content-desc wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            충청남도 문화예술회관 기획공연 사업은 우수 공연 콘텐츠의 전략적 유치와 운영을 통해 도민의 문화향유 기회를 확대하고, 성숙한 공연 관람 문화 정착을 통해 지역 문화역량 강화를 도모하는 사업입니다.
+          </p>
+
+          <!-- 이미지 슬라이더 -->
+          <div class="content-slider wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+            <button class="content-slider__btn content-slider__btn--prev" id="contentPrev" aria-label="이전">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="content-slider__viewport">
+              <div class="content-slider__track" id="contentTrack">
+                <div class="content-slider__slide"><img src="images/arthall_01.jpg" alt="문화예술회관 1" /></div>
+                <div class="content-slider__slide"><img src="images/arthall_02.jpg" alt="문화예술회관 2" /></div>
+                <div class="content-slider__slide"><img src="images/arthall_03.jpg" alt="문화예술회관 3" /></div>
+                <div class="content-slider__slide"><img src="images/arthall_04.jpg" alt="문화예술회관 4" /></div>
+                <div class="content-slider__slide"><img src="images/arthall_05.jpg" alt="문화예술회관 5" /></div>
+              </div>
+            </div>
+            <button class="content-slider__btn content-slider__btn--next" id="contentNext" aria-label="다음">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- 사업 정보 -->
+          <dl class="content-info  ">
+            <div class="content-info__row">
+              <dt><i class="fa-regular fa-circle-check"></i> 사업목표</dt>
+              <dd>충남도민의 문화향유 기회 확대</dd>
+            </div>
+            <div class="content-info__row">
+              <dt><i class="fa-regular fa-file-lines"></i> 사업내용</dt>
+              <dd>국내·외 우수 공연 콘텐츠 유치를 통한 문화예술 향유기회 확대</dd>
+            </div>
+            <div class="content-info__row">
+              <dt><i class="fa-solid fa-location-dot"></i> 장소</dt>
+              <dd>충남 예산군 삽교읍 도청대로 600 충청남도 문화예술회관</dd>
+            </div>
+          </dl>
+
+        </div>
+
+        <!-- 티켓예매 -->
+        <div class="content-panel" id="tab-ticket">
+
+          <!-- 달력 -->
+          <div class="ticket-calendar">
+            <div class="ticket-calendar__header">
+              <span class="ticket-calendar__year" id="calYear">2026</span>
+              <div class="ticket-calendar__month-nav">
+                <button id="calPrev" aria-label="이전 달"><i class="fa-solid fa-chevron-left"></i></button>
+                <strong class="ticket-calendar__month" id="calMonth">MAY / 05</strong>
+                <button id="calNext" aria-label="다음 달"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="ticket-calendar__days" id="calDays"></div>
+          </div>
+
+          <!-- 검색 + 필터 -->
+          <div class="ticket-search-bar">
+            <span class="ticket-count" id="ticketCount">총 1건 (1/1)</span>
+            <div class="ticket-search-bar__right">
+              <select class="ticket-filter" id="ticketFilter">
+                <option value="all">전체</option>
+                <option value="concert">공연</option>
+                <option value="musical">뮤지컬</option>
+                <option value="exhibit">전시</option>
+              </select>
+              <div class="ticket-search-wrap">
+                <input type="text" class="ticket-search-input" id="ticketSearch" placeholder="검색어를 입력하세요." />
+                <button class="ticket-search-btn" aria-label="검색"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 공연 목록 -->
+          <ul class="ticket-list" id="ticketList"></ul>
+
+          <!-- 페이지네이션 -->
+          <div class="ticket-pagination">
+            <button class="ticket-page-btn" aria-label="처음"><i class="fa-solid fa-angles-left"></i></button>
+            <button class="ticket-page-btn" aria-label="이전"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="ticket-page-btn ticket-page-btn--active">1</button>
+            <button class="ticket-page-btn" aria-label="다음"><i class="fa-solid fa-angle-right"></i></button>
+            <button class="ticket-page-btn" aria-label="마지막"><i class="fa-solid fa-angles-right"></i></button>
+          </div>
+
+        </div>
+
+        <!-- 공연예매 안내 -->
+        <div class="content-panel" id="tab-guide">
+          <h3 class="content-subtitle wow fadeInUp" data-wow-duration="0.8s">티켓예매</h3>
+
+          <dl class="content-info wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+            <div class="content-info__row content-info__row--top">
+              <dt><i class="fa-solid fa-desktop"></i> 온라인 예매 (웹·모바일)</dt>
+              <dd>
+                <p>충남문화관광재단 : 충남문화관광재단 누리집 회원제 시스템 제공을 통해 충남도민의 충남도청 문예회관 기획공연 관람 편의를 제공합니다.<br><span class="content-info__sub">(재단 누리집 이용시 예매 수수료 없음, 15% 회원제 할인권종 선택 가능)</span></p>
+                <p class="mt8">NOL티켓 : 안정적인 예약 시스템 구축을 위해 인터파크티켓과 협업하여 예매 서비스를 제공하고 있습니다. (예매 수수료 2,000원)</p>
+              </dd>
+            </div>
+
+            <div class="content-info__row content-info__row--top">
+              <dt><i class="fa-solid fa-phone"></i> 전화 예매</dt>
+              <dd>NOL티켓 : NOL티켓 고객센터(1544-1555) 전화연결을 통한 예매가 가능합니다. 전화 예매 시 상담원 연결까지 시간이 소요될 수 있는 점 양해 부탁드립니다. (예매 수수료 3,000원)</dd>
+            </div>
+
+            <div class="content-info__row content-info__row--top">
+              <dt><i class="fa-solid fa-ticket"></i> 현장판매 (티켓박스 운영)</dt>
+              <dd>
+                <p>판매장소 : 충청남도 문화예술회관 1층 로비 현장 매표소</p>
+                <p>판매시간 : 공연시간 1시간 전 ~ 공연시작 후 15분까지</p>
+                <p>유의사항 : 사전예약 현황에 따라 잔여 좌석이 없을 경우 현장예매가 운영되지 않을 수 있습니다.</p>
+              </dd>
+            </div>
+
+            <div class="content-info__row content-info__row--top content-info__row--no-border">
+              <dt><i class="fa-solid fa-circle-info"></i> 예매 관련 유의사항</dt>
+              <dd>
+                <p>티켓박스 운영시간 이후 티켓 판매, 수령 및 공연관람 입장이 제한될 수 있습니다.</p>
+                <p>예매자 성함 및 전화번호 끝 4자리 확인 후 티켓 수령이 가능합니다. (예매 완료 후 수신 문자를 통해 예매자명 확인 가능)</p>
+                <p>할인 권종 예매 시 해당 티켓으로 관할인 관련 증빙자료를 지참해 주셔야 하며, 미 지참 시 현장에서 차액 결제를 진행합니다.</p>
+              </dd>
+            </div>
+          </dl>
+
+          <!-- 결제수단 및 절차 안내 -->
+          <h3 class="content-subtitle content-subtitle--line wow fadeInUp" data-wow-duration="0.8s">결제수단 및 절차 안내</h3>
+          <dl class="content-info wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+            <div class="content-info__row content-info__row--top">
+              <dt>신용카드<br>(체크카드)</dt>
+              <dd>
+                <p>온라인 예매 시, 결제단계에서 선택한 카드사의 인증 절차에 따라 정보 입력 후 결제 진행 (카드사에 따라 인증 절차가 상이할 수 있음)</p>
+                <p>전화 예매 시, 카드 번호와 유효기간 정보를 통해 결제 가능 (1544-1555)</p>
+              </dd>
+            </div>
+            <div class="content-info__row content-info__row--top content-info__row--no-border">
+              <dt>무통장입금<br>(가상계좌)</dt>
+              <dd>
+                <p>결제단계에서 국내 8개 은행(농협/국민/우리/기업/씨티/신한/하나/우체국)중 입금할 은행 선택 후 예매진행 시, 선택한 은행 가상계좌 자동 발급</p>
+                <p>입금기한 내 발급된 가상계좌로 결제금액을 입금 시 예매 확정</p>
+                <p>ATM기기로는 가상계좌 입금이 불가할 수 있으며 은행에 따라 23시 30분 이후로는 입금이 제한될 수 있음. ※ 입금마감 : 예매일 익일 23시 59분까지</p>
+                <p>가상계좌는 공연일 4일전까지만 이용할 수 있으나 일부 공연은 주최 측의 요청에 따라 별도 조정 될 수 있음.</p>
+                <p>예매 건당 하나의 가상계좌가 생성되므로 다건 예매 시 입금 계좌 확인에 유의(예매금액과 입금금액이 반드시 일치해야 하며, 입금자명은 자유롭게 입력 가능)</p>
+              </dd>
+            </div>
+          </dl>
+
+          <!-- 티켓 예매 시 유의사항 -->
+          <h3 class="content-subtitle content-subtitle--line wow fadeInUp" data-wow-duration="0.8s">티켓 예매 시 유의사항</h3>
+          <dl class="content-info wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+            <div class="content-info__row content-info__row--top">
+              <dt>공연 관람연령 확인</dt>
+              <dd>
+                <p>공연에 따라 관람 연령 제한이 상이할 수 있으므로, 관람을 원하시는 공연의 상세 정보를 반드시 확인하신 후 예매해 주시기 바랍니다.</p>
+                <p>공연 관람 연령에 해당되지 않는 관객의 경우 입장이 제한될 수 있습니다.</p>
+              </dd>
+            </div>
+            <div class="content-info__row content-info__row--top">
+              <dt>온라인(웹,모바일)<br>예매 매수 제한</dt>
+              <dd>
+                <p>온라인(웹,모바일) 예매의 경우 예매 건당 최대 4매까지 구매 가능합니다. (동일 계정으로 다건 예매 가능)</p>
+                <p>20인 이상 단체 관람과 관련하여 티켓 예매를 원하시면 충남문화관광재단(041-630-2914)으로 문의 바랍니다.</p>
+              </dd>
+            </div>
+            <div class="content-info__row content-info__row--top">
+              <dt>휠체어석 예매 안내</dt>
+              <dd>
+                <p>※ 인터넷 및 모바일 예매 불가</p>
+                <p>공연장 객석 내 휠체어석은 휠체어를 이용하는 장애인만 예매하실 수 있습니다.</p>
+                <p>휠체어석 예매를 원하시면 충남문화관광재단(041-630-2914)으로 문의 바랍니다.</p>
+                <p>티켓 수령 시 관람객 본인의 할인 증빙서류를 제시해 주시기 바랍니다.</p>
+                <p>중증(1~3급) 장애인의 경우 동반 1인까지 할인권종 예매 및 관람 가능합니다.</p>
+              </dd>
+            </div>
+            <div class="content-info__row content-info__row--top content-info__row--no-border">
+              <dt>할인권종 안내</dt>
+              <dd>
+                <div class="discount-table-wrap">
+                  <table class="discount-table">
+                    <thead>
+                      <tr>
+                        <th>할인 구분</th>
+                        <th>내용</th>
+                        <th>할인율</th>
+                        <th>대상</th>
+                        <th>할인 증빙</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>충남문화관광재단<br>회원제 할인</td>
+                        <td>회원제 예매</td>
+                        <td>15%</td>
+                        <td>충남문화관광재단<br>누리집 회원</td>
+                        <td>충남문화관광재단 누리집을 통해 예매</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">정책할인<br>(충남형 풀케어 돌봄 정책)</td>
+                        <td>3자녀 이상</td>
+                        <td>70%</td>
+                        <td rowspan="3">가족 전원</td>
+                        <td rowspan="3">12세 이하 유아동 자녀 수 기준, 가족관계증명서 등 확인</td>
+                      </tr>
+                      <tr>
+                        <td>2자녀</td>
+                        <td>50%</td>
+                      </tr>
+                      <tr>
+                        <td>1자녀</td>
+                        <td>30%</td>
+                      </tr>
+                      <tr>
+                        <td>임산부</td>
+                        <td>30%</td>
+                        <td>본인</td>
+                        <td>산모수첩, 임산부배지 등</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="7">자격할인</td>
+                        <td>장애인(중증)</td>
+                        <td rowspan="3">50%</td>
+                        <td>본인 및 동반 1인</td>
+                        <td>장애인카드(중증) 등<br>※ 휠체어석 전화예매 가능</td>
+                      </tr>
+                      <tr>
+                        <td>장애인(경증), 국가<br>유공자, 의상자</td>
+                        <td>본인</td>
+                        <td>장애인카드(경증), 국가보훈증, 의상자증, 의사자유족증 등</td>
+                      </tr>
+                      <tr>
+                        <td>한부모가족</td>
+                        <td>가족 전원</td>
+                        <td>한부모가족 증명서 등</td>
+                      </tr>
+                      <tr>
+                        <td>경로</td>
+                        <td rowspan="4">30%</td>
+                        <td>본인</td>
+                        <td>신분증 등 확인, 1960년생까지</td>
+                      </tr>
+                      <tr>
+                        <td>문화누리카드</td>
+                        <td>본인</td>
+                        <td>문화누리카드</td>
+                      </tr>
+                      <tr>
+                        <td>예술인</td>
+                        <td>본인</td>
+                        <td>예술인패스</td>
+                      </tr>
+                      <tr>
+                        <td>청년<br>문화예술패스</td>
+                        <td>본인</td>
+                        <td>신분증 등(2006-2007년생만 해당)</td>
+                      </tr>
+                      <tr>
+                        <td>기타할인</td>
+                        <td>단체할인</td>
+                        <td>20%</td>
+                        <td>단체</td>
+                        <td>전화 예약<br>(041-630-2914)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html"><img src="images/logo_footer.png" alt="충남문화관광재단" /></a>
+      </div>
+      <div class="footer__center">
+        <nav class="footer__policy"><ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">조직 및 담당업무</a></li>
+          <li><a href="#">찾아오시는길</a></li>
+          <li><a href="#">뷰어다운로드</a></li>
+        </ul></nav>
+        <address class="footer__info">(재)충남문화관광재단 / 주소 : 32416 충남 예산군 삽교읍 예학로 10-22 / TEL : 041-630-2900 / FAX : 041-338-7963, 4618</address>
+        <p class="footer__copy">Copyright ChungNam Culture and Tourism Foundation. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-top">
+          <div class="footer__family" id="footerFamily">
+            <button class="footer__family-btn" id="footerFamilyBtn" aria-expanded="false">
+              <span>FAMILY SITE</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <ul class="footer__family-list">
+              <li><a href="https://www.chungnam.go.kr" target="_blank" rel="noopener">충청남도청</a></li>
+              <li><a href="https://www.cnctf.or.kr" target="_blank" rel="noopener">충남문화관광재단</a></li>
+              <li><a href="#" target="_blank">충남문화포털</a></li>
+              <li><a href="#" target="_blank">충남예술인복지지원센터</a></li>
+              <li><a href="arco-center.html">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html">CN갤러리</a></li>
+              <li><a href="creation-studio.html">충남창작스튜디오</a></li>
+            </ul>
+          </div>
+          <div class="footer__sns">
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-solid fa-b"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-regular fa-comment"></i></a>
+          </div>
+        </div>
+        <div class="footer__right-bottom">
+          <div class="footer__translate">
+            <select onchange="doTranslate(this.value)">
+              <option value="">Select Language</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="zh-CN">中文(简体)</option>
+            </select>
+          </div>
+          <a href="#" class="footer__open-banner">
+            <img src="images/footer_open_banner.png" alt="웹 접근성 품질인증" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- 우측 고정 네비게이션 -->
+  <nav class="side-nav" aria-label="빠른 섹션 이동">
+    <ul class="side-nav__list">
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">리더보드CNO</span></a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">충남방문의해</span></a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">충남예술인복지지원센터</span></a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">충남문화재단</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">
+    <i class="fa-solid fa-arrow-up"></i>
+    <span>TOP</span>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="js/art-hall.js" defer></script>
+</body>
+</html>

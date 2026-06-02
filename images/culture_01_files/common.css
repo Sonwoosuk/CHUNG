@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.warn_box p.help {color:#000; font-weight:500; margin-top:10px;}
+
+.w_full {width:100% !important;}
+.w40 {width:40px !important;}
+.w50 {width:50px !important;}
+.w60 {width:60px !important;}
+.w70 {width:70px !important;}
+.w80 {width:80px !important;}
+.w90 {width:90px !important;}
+.w100 {width:100px !important;}
+.w120 {width:120px !important;}
+.w130 {width:130px !important;}
+.w150 {width:150px !important;}
+.w160 {width:160px !important;}
+.w170 {width:170px !important;}
+.w200 {width:200px !important;}
+.w240 {width:240px !important;}
+.w250 {width:250px !important;}
+.w300 {width:300px !important;}
+.w320 {width:320px !important;}
+.w350 {width:350px !important;}
+.w400 {width:400px !important;}
+.w440 {width:440px !important;}
+.w450 {width:450px !important;}
+.w500 {width:500px !important;}
+.w550 {width:550px !important;}
+.w600 {width:600px !important;}
+.w650 {width:650px !important;}
+.w700 {width:700px !important;}
+.w800 {width:800px !important;}
+.w900 {width:900px !important;}
+.w1000 {width:1000px !important;}
+.w1100 {width:1100px !important;}
+.w1200 {width:1200px !important;}
+
+.w10per {width:10% !important;}
+.w20per {width:20% !important;}
+.w30per {width:30% !important;}
+.w40per {width:40% !important;}
+.w50per {width:50% !important;}
+.w60per {width:60% !important;}
+.w70per {width:70% !important;}
+.w80per {width:80% !important;}
+.w85per {width:85% !important;}
+.w90per {width:90% !important;}
+.w95per {width:95% !important;}
+.w100per {width:100% !important;}
+
+b.bar {display: inline-block; width:10px; text-align: center;}
+b.dot {display: inline-block; width:20px; text-align: center;}
+
+input.s_date {text-align: center;}
+
+input.center {text-align: center !important;}
+input.left {text-align: left !important;}
+input.right {text-align: right !important;}
+
+.tCenter {text-align: center !important;}
+.tLeft {text-align: left !important;}
+.tRight {text-align: right !important;}
+
+.bd_top_none {border-top:0 !important;}
+.bd_bottom_none {border-bottom:0 !important;}
+.bd_left_none {border-left:0 !important;}
+.bd_right_none {border-right:0 !important;}
+
+.bd_top {border-top:1px solid #dedede !important;}
+.bd_bottom {border-bottom:1px solid #dedede !important;}
+.bd_left {border-left:1px solid #dedede !important;}
+.bd_right {border-right:1px solid #dedede !important;}
+
+.bd {border:1px solid #dfe3e9}
+
+/*td 에서 한줄만 나오게*/
+td .one_line {white-space: nowrap;text-overflow: ellipsis; overflow: hidden;max-width: 91%;display: inline-block;vertical-align: middle;}
+
+.text_red {color: #d42f2f !important;}
+.text_blue {color: #074dff !important;}
+.text_gray {color: #6e6e6f !important;}
+
+.fw100 {font-weight: 100 !important;}
+.fw200 {font-weight: 200 !important;}
+.fw300 {font-weight: 300 !important;}
+.fw400 {font-weight: 400 !important;}
+.fw500 {font-weight: 500 !important;}
+.fw600 {font-weight: 600 !important;}
+.fw700 {font-weight: 700 !important;}
+.fw800 {font-weight: 800 !important;}
+
+
+

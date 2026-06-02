@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/common.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/arco-center.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <title>아르코공연연습센터@서천 | 충남문화관광재단</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html"><img src="images/logo.png" alt="충남문화관광재단" /></a>
+      </h1>
+      <nav class="header__gnb" aria-label="주요 메뉴">
+        <ul class="gnb__list">
+          <li class="gnb__item"><a href="#" class="gnb__link">사업안내</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">예술지원</a></li>
+              <li><a href="#" class="gnb__sub-link">문화사업</a></li>
+              <li><a href="#" class="gnb__sub-link">예술교육</a></li>
+              <li><a href="#" class="gnb__sub-link">예술복지</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">알림공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">공지사항</a></li>
+              <li><a href="#" class="gnb__sub-link">공모·입찰</a></li>
+              <li><a href="#" class="gnb__sub-link">채용공고</a></li>
+              <li><a href="#" class="gnb__sub-link">언론보도</a></li>
+              <li><a href="#" class="gnb__sub-link">뉴스레터</a></li>
+              <li><a href="#" class="gnb__sub-link">관련소식</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">소통공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">발간자료</a></li>
+              <li><a href="#" class="gnb__sub-link">서식자료</a></li>
+              <li><a href="#" class="gnb__sub-link">의견청취</a></li>
+              <li><a href="#" class="gnb__sub-link">연간행사</a></li>
+              <li><a href="#" class="gnb__sub-link">정책대시보드</a></li>
+              <li><a href="#" class="gnb__sub-link">클린라인</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item gnb__item--active"><a href="#" class="gnb__link">문화공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="art-hall.html" class="gnb__sub-link">충청남도 문화예술회관</a></li>
+              <li><a href="arco-center.html" class="gnb__sub-link gnb__sub-link--active">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html" class="gnb__sub-link">CN갤러리</a></li>
+              <li><a href="creation-studio.html" class="gnb__sub-link">충남 창작스튜디오</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">정보공개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">정보공개 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">인권경영</a></li>
+              <li><a href="#" class="gnb__sub-link">윤리경영</a></li>
+              <li><a href="#" class="gnb__sub-link">ESG경영</a></li>
+              <li><a href="#" class="gnb__sub-link">적극행정</a></li>
+              <li><a href="#" class="gnb__sub-link">경영공시</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">재단소개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">인사말</a></li>
+              <li><a href="#" class="gnb__sub-link">경영목표</a></li>
+              <li><a href="#" class="gnb__sub-link">연혁</a></li>
+              <li><a href="#" class="gnb__sub-link">CI/BI·캐릭터</a></li>
+              <li><a href="#" class="gnb__sub-link">조직도</a></li>
+              <li><a href="#" class="gnb__sub-link">SNS</a></li>
+              <li><a href="#" class="gnb__sub-link">오시는길</a></li>
+              <li><a href="#" class="gnb__sub-link">유관·협약기관</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">문화기부</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">문화CF 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">특별한 기부</a></li>
+              <li><a href="#" class="gnb__sub-link">기부금 사용처</a></li>
+              <li><a href="#" class="gnb__sub-link">기부소식</a></li>
+              <li><a href="#" class="gnb__sub-link">기부하기</a></li>
+              <li><a href="#" class="gnb__sub-link">나의 기부 현황 보기</a></li>
+              <li><a href="#" class="gnb__sub-link">명예의 전당</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__utils">
+        <a href="#" class="utils__login"><i class="fa-regular fa-circle-user"></i><span>로그인 / 회원가입</span></a>
+        <button class="utils__search" type="button" aria-label="검색"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="utils__hamburger" type="button" aria-label="전체 메뉴" aria-expanded="false" id="hamburgerBtn">
+          <span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEGA MENU -->
+  <nav class="mega-menu" id="megaMenu" aria-label="전체 메뉴" aria-hidden="true">
+    <div class="mega-menu__inner">
+      <div class="mega-menu__row"><span class="mega-menu__title">사업안내</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">예술지원</a></li><li><a href="#" class="mega-menu__sub-link">문화사업</a></li><li><a href="#" class="mega-menu__sub-link">예술교육</a></li><li><a href="#" class="mega-menu__sub-link">예술복지</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">알림공간</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">공지사항</a></li><li><a href="#" class="mega-menu__sub-link">공모·입찰</a></li><li><a href="#" class="mega-menu__sub-link">채용공고</a></li><li><a href="#" class="mega-menu__sub-link">언론보도</a></li><li><a href="#" class="mega-menu__sub-link">뉴스레터</a></li><li><a href="#" class="mega-menu__sub-link">관련소식</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">소통공간</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">발간자료</a></li><li><a href="#" class="mega-menu__sub-link">서식자료</a></li><li><a href="#" class="mega-menu__sub-link">의견청취</a></li><li><a href="#" class="mega-menu__sub-link">연간행사</a></li><li><a href="#" class="mega-menu__sub-link">정책대시보드</a></li><li><a href="#" class="mega-menu__sub-link">클린라인</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">문화공간</span><ul class="mega-menu__sub"><li><a href="art-hall.html" class="mega-menu__sub-link">충청남도 문화예술회관</a></li><li><a href="arco-center.html" class="mega-menu__sub-link">아르코공연연습센터@서천</a></li><li><a href="cn-gallery.html" class="mega-menu__sub-link">CN갤러리</a></li><li><a href="creation-studio.html" class="mega-menu__sub-link">충남 창작스튜디오</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">정보공개</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">정보공개 안내</a></li><li><a href="#" class="mega-menu__sub-link">인권경영</a></li><li><a href="#" class="mega-menu__sub-link">윤리경영</a></li><li><a href="#" class="mega-menu__sub-link">ESG경영</a></li><li><a href="#" class="mega-menu__sub-link">적극행정</a></li><li><a href="#" class="mega-menu__sub-link">경영공시</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">재단소개</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">인사말</a></li><li><a href="#" class="mega-menu__sub-link">경영목표</a></li><li><a href="#" class="mega-menu__sub-link">연혁</a></li><li><a href="#" class="mega-menu__sub-link">CI/BI·캐릭터</a></li><li><a href="#" class="mega-menu__sub-link">조직도</a></li><li><a href="#" class="mega-menu__sub-link">SNS</a></li><li><a href="#" class="mega-menu__sub-link">오시는길</a></li><li><a href="#" class="mega-menu__sub-link">유관·협약기관</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">문화기부</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">문화CF 안내</a></li><li><a href="#" class="mega-menu__sub-link">특별한 기부</a></li><li><a href="#" class="mega-menu__sub-link">기부금 사용처</a></li><li><a href="#" class="mega-menu__sub-link">기부소식</a></li><li><a href="#" class="mega-menu__sub-link">기부하기</a></li><li><a href="#" class="mega-menu__sub-link">나의 기부 현황 보기</a></li><li><a href="#" class="mega-menu__sub-link">명예의 전당</a></li></ul></div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- 브레드크럼 -->
+    <div class="breadcrumb wow fadeInUp" data-wow-duration="0.8s">
+      <div class="breadcrumb__inner">
+        <ul class="breadcrumb__list">
+          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#">문화공간</a></li>
+          <li><span>아르코공연연습센터@서천</span></li>
+        </ul>
+        <div class="breadcrumb__actions">
+          <button aria-label="링크 복사" onclick="navigator.clipboard.writeText(location.href)"><i class="fa-solid fa-link"></i></button>
+          <button aria-label="공유하기"><i class="fa-solid fa-share-nodes"></i></button>
+          <button aria-label="인쇄" onclick="window.print()"><i class="fa-solid fa-print"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title-section wow fadeInUp" data-wow-duration="0.8s">
+      <div class="page-title-section__inner">
+        <p class="page-title-section__category">문화공간</p>
+        <h2 class="page-title-section__title">아르코공연연습센터@서천</h2>
+        <nav class="page-sub-nav" aria-label="문화공간 메뉴">
+          <div class="page-sub-nav__wrap">
+            <div class="page-sub-nav__slider" id="subNavSlider"></div>
+            <ul class="page-sub-nav__list" id="subNavList">
+            <li><a href="art-hall.html" class="page-sub-nav__link">충청남도 문화예술회관</a></li>
+            <li><a href="arco-center.html" class="page-sub-nav__link page-sub-nav__link--active">아르코공연연습센터@서천</a></li>
+            <li><a href="cn-gallery.html" class="page-sub-nav__link">CN갤러리</a></li>
+            <li><a href="creation-studio.html" class="page-sub-nav__link">충남 창작스튜디오</a></li>
+          </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 콘텐츠 -->
+    <section class="page-content">
+      <div class="page-content__inner">
+
+        <!-- 소개 텍스트 -->
+        <p class="arco-intro wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+          아르코공연연습센터@서천은 예술가에게 안정적인 연습 공간과 전문적인 창작 환경을 제공함으로써 공연예술 전 분야의 창작 역량 강화를 지원하는 거점 공간입니다.<br>
+          다양한 기획 프로그램 운영을 통해 지역 주민에게 수준 높은 문화예술 경험을 제공하고, 일상 속 문화향유 기회를 지속적으로 확대하고 있습니다.
+        </p>
+
+        <!-- 이미지 슬라이더 -->
+        <div class="content-slider wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+          <button class="content-slider__btn content-slider__btn--prev" id="contentPrev" aria-label="이전"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="content-slider__viewport">
+            <div class="content-slider__track" id="contentTrack">
+              <div class="content-slider__slide"><img src="images/arco_01.jpg" alt="아르코서천" /></div>
+              <div class="content-slider__slide"><img src="images/arco_02.jpg" alt="소연습실" /></div>
+              <div class="content-slider__slide"><img src="images/arco_03.jpg" alt="중연습실" /></div>
+              <div class="content-slider__slide"><img src="images/arco_04.jpg" alt="리딩룸" /></div>
+              <div class="content-slider__slide"><img src="images/arco_05.jpg" alt="동아리실" /></div>
+            </div>
+          </div>
+          <button class="content-slider__btn content-slider__btn--next" id="contentNext" aria-label="다음"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- 사업 정보 -->
+        <dl class="content-info wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+          <div class="content-info__row">
+            <dt><i class="fa-regular fa-circle-check"></i> 사업목표</dt>
+            <dd>민간 공연예술단체와 예술가들이 안전한 연습 공간에서 안정적으로 창작활동을 할 수 있도록 지원</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-regular fa-file-lines"></i> 사업내용</dt>
+            <dd>연습센터 수시·정기 대관 운영을 통한 지역예술인 활동 기회 제공<br>기획프로그램을 통한 지역민 문화향유기회 확대</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-regular fa-clock"></i> 운영시간</dt>
+            <dd>월요일 ~ 토요일 10:00 ~ 22:00 ※ 일요일, 법정 공휴일, 기타 운영기관 별도 지정일 휴관</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-solid fa-location-dot"></i> 장소</dt>
+            <dd>서천군 장항읍 성화로 26-2 아르코공연연습센터@서천</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-solid fa-file-signature"></i> 대관신청</dt>
+            <dd><a href="#" class="arco-link">대관신청 바로가기 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></dd>
+          </div>
+          <div class="content-info__row content-info__row--top">
+            <dt><i class="fa-solid fa-building"></i> 시설구성</dt>
+            <dd>
+              <p class="arco-facility-total">전체면적｜1,085㎡</p>
+            </dd>
+          </div>
+        </dl>
+
+        <!-- 시설 테이블 -->
+        <div class="arco-table-wrap arco-facility-table wow fadeInUp" data-wow-duration="0.8s">
+          <table class="arco-table">
+            <thead>
+              <tr>
+                <th>위치</th>
+                <th>구분</th>
+                <th>크기</th>
+                <th>면적</th>
+                <th>구비시설</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3">1층</td>
+                <td>공연무대</td>
+                <td>5m x 4m x 2.7m</td>
+                <td>20㎡</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>중연습실</td>
+                <td>12.8m x 7.6m x 2.75m</td>
+                <td>97.3㎡</td>
+                <td>음향기기, 그랜드피아노, 보면대, 의자</td>
+              </tr>
+              <tr>
+                <td>리딩룸</td>
+                <td>8m x 3.5m x 2.7m</td>
+                <td>28㎡</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td rowspan="4">2층</td>
+                <td>소연습실1</td>
+                <td>10m x 7.6m x 2.6m</td>
+                <td>76㎡</td>
+                <td>음향기기, 그랜드피아노, 보면대, 의자</td>
+              </tr>
+              <tr>
+                <td>소연습실2</td>
+                <td>12m x 6m x 2.6m</td>
+                <td>72㎡</td>
+                <td>음향기기, 댄스플로어, 발레바, 보면대, 의자</td>
+              </tr>
+              <tr>
+                <td>세미나실</td>
+                <td>9.9m x 5m x 2.7m</td>
+                <td>49.5㎡</td>
+                <td>음향기기, 빔프로젝트, 스크린</td>
+              </tr>
+              <tr>
+                <td>동아리실</td>
+                <td>6.5m x 6m x 2.7m</td>
+                <td>39㎡</td>
+                <td>대형화이트보드</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 주요 프로그램 + 문의전화 -->
+        <dl class="content-info content-info--sub wow fadeInUp" data-wow-duration="0.8s">
+          <div class="content-info__row">
+            <dt> 주요 프로그램</dt>
+            <dd>연습센터 수시대관, 상반기/하반기 정기대관, 문화예술향유 프로그램 기획 및 운영</dd>
+          </div>
+          <div class="content-info__row content-info__row--no-border">
+            <dt> 문의전화</dt>
+            <dd>041-957-0615~6</dd>
+          </div>
+        </dl>
+
+        <!-- 대관료 테이블 -->
+        <div class="arco-rental  wow fadeInUp" data-wow-duration="0.8s">
+          <h3 class="arco-rental__title">대관료 기준</h3>
+          <div class="arco-table-wrap">
+            <table class="arco-table arco-table--rental">
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>오전 (10:00 ~ 13:00)</th>
+                  <th>오후 (14:00 ~ 17:00)</th>
+                  <th>저녁 (18:00 ~ 22:00)</th>
+                  <th>전일 (10:00 ~ 22:00)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>중연습실</td>
+                  <td>5,000원</td>
+                  <td>5,000원</td>
+                  <td>5,000원</td>
+                  <td>10,000원</td>
+                </tr>
+                <tr>
+                  <td>소연습실</td>
+                  <td>3,000원</td>
+                  <td>3,000원</td>
+                  <td>3,000원</td>
+                  <td>5,000원</td>
+                </tr>
+                <tr>
+                  <td>동아리/리딩룸</td>
+                  <td colspan="4" class="arco-table__note">공연예술 목적 사용 시 무료사용 (단, 아니할 경우 소연습실과 동일)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 시설 갤러리 -->
+        <div class="arco-gallery   wow fadeInUp" data-wow-duration="0.8s">
+          <div class="arco-gallery__row wow fadeInUp" data-wow-duration="0.8s">
+            <figure class="arco-gallery__item">
+              <img src="images/arco_01.jpg" alt="아르코서천" />
+              <figcaption>아르코서천</figcaption>
+            </figure>
+            <figure class="arco-gallery__item">
+              <img src="images/arco_02.jpg" alt="소연습실" />
+              <figcaption>소연습실</figcaption>
+            </figure>
+            <figure class="arco-gallery__item">
+              <img src="images/arco_03.jpg" alt="중연습실" />
+              <figcaption>중연습실</figcaption>
+            </figure>
+          </div>
+          <div class="arco-gallery__row wow fadeInUp" data-wow-duration="0.8s">
+            <figure class="arco-gallery__item">
+              <img src="images/arco_04.jpg" alt="리딩룸" />
+              <figcaption>리딩룸</figcaption>
+            </figure>
+            <figure class="arco-gallery__item">
+              <img src="images/arco_05.jpg" alt="동아리실" />
+              <figcaption>동아리실</figcaption>
+            </figure>
+            <figure class="arco-gallery__item">
+              <img src="images/arco_06.jpg" alt="세미나실" />
+              <figcaption>세미나실</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand"><a href="index.html"><img src="images/logo_footer.png" alt="충남문화관광재단" /></a></div>
+      <div class="footer__center">
+        <nav class="footer__policy"><ul>
+          <li><a href="#">개인정보처리방침</a></li><li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">조직 및 담당업무</a></li><li><a href="#">찾아오시는길</a></li><li><a href="#">뷰어다운로드</a></li>
+        </ul></nav>
+        <address class="footer__info">(재)충남문화관광재단 / 주소 : 32416 충남 예산군 삽교읍 예학로 10-22 / TEL : 041-630-2900 / FAX : 041-338-7963, 4618</address>
+        <p class="footer__copy">Copyright ChungNam Culture and Tourism Foundation. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-top">
+          <div class="footer__family" id="footerFamily">
+            <button class="footer__family-btn" id="footerFamilyBtn" aria-expanded="false"><span>FAMILY SITE</span><i class="fa-solid fa-chevron-up"></i></button>
+            <ul class="footer__family-list">
+              <li><a href="https://www.chungnam.go.kr" target="_blank">충청남도청</a></li>
+              <li><a href="https://www.cnctf.or.kr" target="_blank">충남문화관광재단</a></li>
+              <li><a href="#" target="_blank">충남문화포털</a></li>
+              <li><a href="#" target="_blank">충남예술인복지지원센터</a></li>
+              <li><a href="arco-center.html">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html">CN갤러리</a></li>
+              <li><a href="creation-studio.html">충남창작스튜디오</a></li>
+            </ul>
+          </div>
+          <div class="footer__sns">
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-solid fa-b"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-regular fa-comment"></i></a>
+          </div>
+        </div>
+        <div class="footer__right-bottom">
+          <div class="footer__translate">
+            <select onchange="doTranslate(this.value)">
+              <option value="">Select Language</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="zh-CN">中文(简体)</option>
+            </select>
+          </div>
+          <a href="#" class="footer__open-banner"><img src="images/footer_open_banner.png" alt="웹 접근성 품질인증" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- 우측 고정 네비게이션 -->
+  <nav class="side-nav" aria-label="빠른 섹션 이동">
+    <ul class="side-nav__list">
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">리더보드CNO</span></a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">충남방문의해</span></a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">충남예술인복지지원센터</span></a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link"><span class="side-nav__text">충남문화재단</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">
+    <i class="fa-solid fa-arrow-up"></i><span>TOP</span>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="js/arco-center.js" defer></script>
+</body>
+</html>

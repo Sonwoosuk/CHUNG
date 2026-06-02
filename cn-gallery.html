@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/common.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/cn-gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <title>CN갤러리 | 충남문화관광재단</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html"><img src="images/logo.png" alt="충남문화관광재단" /></a>
+      </h1>
+      <nav class="header__gnb" aria-label="주요 메뉴">
+        <ul class="gnb__list">
+          <li class="gnb__item"><a href="#" class="gnb__link">사업안내</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">예술지원</a></li>
+              <li><a href="#" class="gnb__sub-link">문화사업</a></li>
+              <li><a href="#" class="gnb__sub-link">예술교육</a></li>
+              <li><a href="#" class="gnb__sub-link">예술복지</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">알림공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">공지사항</a></li>
+              <li><a href="#" class="gnb__sub-link">공모·입찰</a></li>
+              <li><a href="#" class="gnb__sub-link">채용공고</a></li>
+              <li><a href="#" class="gnb__sub-link">언론보도</a></li>
+              <li><a href="#" class="gnb__sub-link">뉴스레터</a></li>
+              <li><a href="#" class="gnb__sub-link">관련소식</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">소통공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">발간자료</a></li>
+              <li><a href="#" class="gnb__sub-link">서식자료</a></li>
+              <li><a href="#" class="gnb__sub-link">의견청취</a></li>
+              <li><a href="#" class="gnb__sub-link">연간행사</a></li>
+              <li><a href="#" class="gnb__sub-link">정책대시보드</a></li>
+              <li><a href="#" class="gnb__sub-link">클린라인</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item gnb__item--active"><a href="#" class="gnb__link">문화공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="art-hall.html" class="gnb__sub-link">충청남도 문화예술회관</a></li>
+              <li><a href="arco-center.html" class="gnb__sub-link">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html" class="gnb__sub-link gnb__sub-link--active">CN갤러리</a></li>
+              <li><a href="creation-studio.html" class="gnb__sub-link">충남 창작스튜디오</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">정보공개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">정보공개 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">인권경영</a></li>
+              <li><a href="#" class="gnb__sub-link">윤리경영</a></li>
+              <li><a href="#" class="gnb__sub-link">ESG경영</a></li>
+              <li><a href="#" class="gnb__sub-link">적극행정</a></li>
+              <li><a href="#" class="gnb__sub-link">경영공시</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">재단소개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">인사말</a></li>
+              <li><a href="#" class="gnb__sub-link">경영목표</a></li>
+              <li><a href="#" class="gnb__sub-link">연혁</a></li>
+              <li><a href="#" class="gnb__sub-link">CI/BI·캐릭터</a></li>
+              <li><a href="#" class="gnb__sub-link">조직도</a></li>
+              <li><a href="#" class="gnb__sub-link">SNS</a></li>
+              <li><a href="#" class="gnb__sub-link">오시는길</a></li>
+              <li><a href="#" class="gnb__sub-link">유관·협약기관</a></li>
+            </ul>
+          </li>
+          <li class="gnb__item"><a href="#" class="gnb__link">문화기부</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">문화CF 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">특별한 기부</a></li>
+              <li><a href="#" class="gnb__sub-link">기부금 사용처</a></li>
+              <li><a href="#" class="gnb__sub-link">기부소식</a></li>
+              <li><a href="#" class="gnb__sub-link">기부하기</a></li>
+              <li><a href="#" class="gnb__sub-link">나의 기부 현황 보기</a></li>
+              <li><a href="#" class="gnb__sub-link">명예의 전당</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__utils">
+        <a href="#" class="utils__login"><i class="fa-regular fa-circle-user"></i><span>로그인 / 회원가입</span></a>
+        <button class="utils__search" type="button" aria-label="검색"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="utils__hamburger" type="button" aria-label="전체 메뉴" aria-expanded="false" id="hamburgerBtn">
+          <span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEGA MENU -->
+  <nav class="mega-menu" id="megaMenu" aria-label="전체 메뉴" aria-hidden="true">
+    <div class="mega-menu__inner">
+      <div class="mega-menu__row"><span class="mega-menu__title">사업안내</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">예술지원</a></li><li><a href="#" class="mega-menu__sub-link">문화사업</a></li><li><a href="#" class="mega-menu__sub-link">예술교육</a></li><li><a href="#" class="mega-menu__sub-link">예술복지</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">알림공간</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">공지사항</a></li><li><a href="#" class="mega-menu__sub-link">공모·입찰</a></li><li><a href="#" class="mega-menu__sub-link">채용공고</a></li><li><a href="#" class="mega-menu__sub-link">언론보도</a></li><li><a href="#" class="mega-menu__sub-link">뉴스레터</a></li><li><a href="#" class="mega-menu__sub-link">관련소식</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">소통공간</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">발간자료</a></li><li><a href="#" class="mega-menu__sub-link">서식자료</a></li><li><a href="#" class="mega-menu__sub-link">의견청취</a></li><li><a href="#" class="mega-menu__sub-link">연간행사</a></li><li><a href="#" class="mega-menu__sub-link">정책대시보드</a></li><li><a href="#" class="mega-menu__sub-link">클린라인</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">문화공간</span><ul class="mega-menu__sub"><li><a href="art-hall.html" class="mega-menu__sub-link">충청남도 문화예술회관</a></li><li><a href="arco-center.html" class="mega-menu__sub-link">아르코공연연습센터@서천</a></li><li><a href="cn-gallery.html" class="mega-menu__sub-link">CN갤러리</a></li><li><a href="creation-studio.html" class="mega-menu__sub-link">충남 창작스튜디오</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">정보공개</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">정보공개 안내</a></li><li><a href="#" class="mega-menu__sub-link">인권경영</a></li><li><a href="#" class="mega-menu__sub-link">윤리경영</a></li><li><a href="#" class="mega-menu__sub-link">ESG경영</a></li><li><a href="#" class="mega-menu__sub-link">적극행정</a></li><li><a href="#" class="mega-menu__sub-link">경영공시</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">재단소개</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">인사말</a></li><li><a href="#" class="mega-menu__sub-link">경영목표</a></li><li><a href="#" class="mega-menu__sub-link">연혁</a></li><li><a href="#" class="mega-menu__sub-link">CI/BI·캐릭터</a></li><li><a href="#" class="mega-menu__sub-link">조직도</a></li><li><a href="#" class="mega-menu__sub-link">SNS</a></li><li><a href="#" class="mega-menu__sub-link">오시는길</a></li><li><a href="#" class="mega-menu__sub-link">유관·협약기관</a></li></ul></div>
+      <div class="mega-menu__row"><span class="mega-menu__title">문화기부</span><ul class="mega-menu__sub"><li><a href="#" class="mega-menu__sub-link">문화CF 안내</a></li><li><a href="#" class="mega-menu__sub-link">특별한 기부</a></li><li><a href="#" class="mega-menu__sub-link">기부금 사용처</a></li><li><a href="#" class="mega-menu__sub-link">기부소식</a></li><li><a href="#" class="mega-menu__sub-link">기부하기</a></li><li><a href="#" class="mega-menu__sub-link">나의 기부 현황 보기</a></li><li><a href="#" class="mega-menu__sub-link">명예의 전당</a></li></ul></div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- 브레드크럼 -->
+    <div class="breadcrumb" data-anim>
+      <div class="breadcrumb__inner">
+        <ul class="breadcrumb__list">
+          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#">문화공간</a></li>
+          <li><span>CN갤러리</span></li>
+        </ul>
+        <div class="breadcrumb__actions">
+          <button aria-label="링크 복사" onclick="navigator.clipboard.writeText(location.href)"><i class="fa-solid fa-link"></i></button>
+          <button aria-label="공유하기"><i class="fa-solid fa-share-nodes"></i></button>
+          <button aria-label="인쇄" onclick="window.print()"><i class="fa-solid fa-print"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title-section" data-anim>
+      <div class="page-title-section__inner">
+        <p class="page-title-section__category">문화공간</p>
+        <h2 class="page-title-section__title">CN갤러리</h2>
+        <nav class="page-sub-nav" aria-label="문화공간 메뉴">
+          <div class="page-sub-nav__wrap">
+            <div class="page-sub-nav__slider" id="subNavSlider"></div>
+            <ul class="page-sub-nav__list" id="subNavList">
+            <li><a href="art-hall.html" class="page-sub-nav__link">충청남도 문화예술회관</a></li>
+            <li><a href="arco-center.html" class="page-sub-nav__link">아르코공연연습센터@서천</a></li>
+            <li><a href="cn-gallery.html" class="page-sub-nav__link page-sub-nav__link--active">CN갤러리</a></li>
+            <li><a href="creation-studio.html" class="page-sub-nav__link">충남 창작스튜디오</a></li>
+          </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 콘텐츠 -->
+    <section class="page-content">
+      <div class="page-content__inner">
+
+        <!-- 소제목 -->
+        <h3 class="cn-subtitle" data-anim>충남문화예술 서울전시장 CN갤러리</h3>
+
+        <!-- 소개 텍스트 -->
+        <p class="cn-intro" data-anim>
+          ChungNam(중남)의 막자인 CN갤러리는 충남을 대표하는 문화예술 거점 공간으로, 지역 문화예술 진흥과 예술인 성장 기반 조성을 핵심 목표로 운영되고 있습니다.<br>
+          CN갤러리는 충남 예술인의 중앙 무대 진출을 지원하는 플랫폼이자 문화사업 연계 매개체로서 기능하며, 충남 문화예술의 고유한 정체성과 브랜드 가치를 구축하는 중심 거점으로 발전하고자 합니다.
+        </p>
+
+        <!-- 이미지 슬라이더 -->
+        <div class="content-slider" data-anim>
+          <button class="content-slider__btn content-slider__btn--prev" id="contentPrev" aria-label="이전"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="content-slider__viewport">
+            <div class="content-slider__track" id="contentTrack">
+              <div class="content-slider__slide"><img src="images/cn_01.jpg" alt="CN갤러리 1" /></div>
+              <div class="content-slider__slide"><img src="images/cn_02.jpg" alt="CN갤러리 2" /></div>
+              <div class="content-slider__slide"><img src="images/cn_03.jpg" alt="CN갤러리 3" /></div>
+              <div class="content-slider__slide"><img src="images/cn_04.jpg" alt="CN갤러리 4" /></div>
+              <div class="content-slider__slide"><img src="images/cn_05.jpg" alt="CN갤러리 5" /></div>
+            </div>
+          </div>
+          <button class="content-slider__btn content-slider__btn--next" id="contentNext" aria-label="다음"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- 사업 정보 -->
+        <dl class="content-info" data-anim>
+          <div class="content-info__row">
+            <dt><i class="fa-regular fa-circle-check"></i> 사업목표</dt>
+            <dd>충청남도 예술인의 중앙 진출 기회 마련 및 충남 문화예술 마케팅 강화</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-regular fa-file-lines"></i> 사업내용</dt>
+            <dd>충남 예술인의 중앙 전시 개최와 온·오프라인 홍보 지원을 통한 창작 역량 제고 및 활동 저변 확대</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-regular fa-clock"></i> 운영시간</dt>
+            <dd>매주 화요일 ~ 일요일 10:00 ~ 18:00 ※ 월요일 및 공휴일 휴관</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-solid fa-location-dot"></i> 장소</dt>
+            <dd>서울특별시 종로구 북촌로 5길 56-7</dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-solid fa-globe"></i> 홈페이지</dt>
+            <dd><a href="#" class="cn-link">갤러리 홈페이지 바로가기 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></dd>
+          </div>
+          <div class="content-info__row">
+            <dt><i class="fa-solid fa-building"></i> 시설구성</dt>
+            <dd>전체면적｜346㎡, 1층｜전시실(122㎡), 2층｜전시실(115㎡), 3층｜전시실 및 옥상(109㎡)</dd>
+          </div>
+          <div class="content-info__row">
+            <dt> 주요 프로그램</dt>
+            <dd>정기대관 공모 전시, 기획 전시, 전시 관련 프로그램 등</dd>
+          </div>
+          <div class="content-info__row content-info__row--no-border">
+            <dt> 문의전화</dt>
+            <dd>02-739-6405~6</dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand"><a href="index.html"><img src="images/logo_footer.png" alt="충남문화관광재단" /></a></div>
+      <div class="footer__center">
+        <nav class="footer__policy"><ul>
+          <li><a href="#">개인정보처리방침</a></li><li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">조직 및 담당업무</a></li><li><a href="#">찾아오시는길</a></li><li><a href="#">뷰어다운로드</a></li>
+        </ul></nav>
+        <address class="footer__info">(재)충남문화관광재단 / 주소 : 32416 충남 예산군 삽교읍 예학로 10-22 / TEL : 041-630-2900 / FAX : 041-338-7963, 4618</address>
+        <p class="footer__copy">Copyright ChungNam Culture and Tourism Foundation. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-top">
+          <div class="footer__family" id="footerFamily">
+            <button class="footer__family-btn" id="footerFamilyBtn" aria-expanded="false"><span>FAMILY SITE</span><i class="fa-solid fa-chevron-up"></i></button>
+            <ul class="footer__family-list">
+              <li><a href="https://www.chungnam.go.kr" target="_blank">충청남도청</a></li>
+              <li><a href="https://www.cnctf.or.kr" target="_blank">충남문화관광재단</a></li>
+              <li><a href="#" target="_blank">충남문화포털</a></li>
+              <li><a href="#" target="_blank">충남예술인복지지원센터</a></li>
+              <li><a href="arco-center.html">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html">CN갤러리</a></li>
+              <li><a href="creation-studio.html">충남창작스튜디오</a></li>
+            </ul>
+          </div>
+          <div class="footer__sns">
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-solid fa-b"></i></a>
+            <a href="#" class="footer__sns-link"><i class="fa-regular fa-comment"></i></a>
+          </div>
+        </div>
+        <div class="footer__right-bottom">
+          <div class="footer__translate">
+            <select onchange="doTranslate(this.value)">
+              <option value="">Select Language</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="zh-CN">中文(简体)</option>
+            </select>
+          </div>
+          <a href="#" class="footer__open-banner"><img src="images/footer_open_banner.png" alt="웹 접근성 품질인증" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 우측 고정 네비게이션 -->
+  <nav class="side-nav" aria-label="빠른 섹션 이동">
+    <ul class="side-nav__list">
+      <li class="side-nav__item"><a href="#" class="side-nav__link"><span class="side-nav__text">리더보드CNO</span></a></li>
+      <li class="side-nav__item"><a href="#" class="side-nav__link"><span class="side-nav__text">충남방문의해</span></a></li>
+      <li class="side-nav__item"><a href="#" class="side-nav__link"><span class="side-nav__text">충남예술인복지지원센터</span></a></li>
+      <li class="side-nav__item"><a href="#" class="side-nav__link"><span class="side-nav__text">충남문화재단</span></a></li>
+    </ul>
+  </nav>
+
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">
+    <i class="fa-solid fa-arrow-up"></i><span>TOP</span>
+  </button>
+  <script src="js/cn-gallery.js" defer></script>
+</body>
+</html>

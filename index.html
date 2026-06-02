@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="충남문화관광재단 - 충청남도의 문화와 관광을 선도합니다." />
+
+  <!-- Google Fonts: Ubuntu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Pretendard 웹폰트 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/common.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+
+  <title>충남문화관광재단</title>
+</head>
+<body>
+
+  <!-- ==============================
+       HEADER — 상단 고정 헤더
+  ================================ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- 로고 -->
+      <h1 class="header__logo">
+        <a href="/" aria-label="충남문화관광재단 홈으로 이동">
+          <img src="images/logo.png" alt="충남문화관광재단" />
+        </a>
+      </h1>
+
+      <!-- 글로벌 네비게이션 -->
+      <nav class="header__gnb" aria-label="주요 메뉴">
+        <ul class="gnb__list">
+
+          <li class="gnb__item">
+            <a href="#" class="gnb__link">사업안내</a>
+            <ul class="gnb__dropdown">
+              <li><a href="culture-art.html" class="gnb__sub-link">예술지원</a></li>
+              <li><a href="culture-business.html" class="gnb__sub-link">문화사업</a></li>
+              <li><a href="art-education.html" class="gnb__sub-link">예술교육</a></li>
+              <li><a href="art-welfare.html" class="gnb__sub-link">예술복지</a></li>
+            </ul>
+          </li>
+
+          <li class="gnb__item">
+            <a href="#" class="gnb__link">알림공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">공지사항</a></li>
+              <li><a href="#" class="gnb__sub-link">공모·입찰</a></li>
+              <li><a href="#" class="gnb__sub-link">채용공고</a></li>
+              <li><a href="#" class="gnb__sub-link">언론보도</a></li>
+              <li><a href="#" class="gnb__sub-link">뉴스레터</a></li>
+              <li><a href="#" class="gnb__sub-link">관련소식</a></li>
+            </ul>
+          </li>
+
+          <li class="gnb__item">
+            <a href="#" class="gnb__link">소통공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">발간자료</a></li>
+              <li><a href="#" class="gnb__sub-link">서식자료</a></li>
+              <li><a href="#" class="gnb__sub-link">의견청취</a></li>
+              <li><a href="#" class="gnb__sub-link">연간행사</a></li>
+              <li><a href="#" class="gnb__sub-link">정책대시보드</a></li>
+              <li><a href="#" class="gnb__sub-link">클린라인</a></li>
+            </ul>
+          </li>
+
+          <li class="gnb__item">
+            <a href="art-hall.html" class="gnb__link">문화공간</a>
+            <ul class="gnb__dropdown">
+              <li><a href="art-hall.html" class="gnb__sub-link">충청남도 문화예술회관</a></li>
+              <li><a href="arco-center.html" class="gnb__sub-link">아르코공연연습센터@서천</a></li>
+              <li><a href="cn-gallery.html" class="gnb__sub-link">CN갤러리</a></li>
+              <li><a href="creation-studio.html" class="gnb__sub-link">충남 창작스튜디오</a></li>
+            </ul>
+          </li>
+
+          <li class="gnb__item">
+            <a href="#" class="gnb__link">정보공개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">정보공개 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">인권경영</a></li>
+              <li><a href="#" class="gnb__sub-link">윤리경영</a></li>
+              <li><a href="#" class="gnb__sub-link">ESG경영</a></li>
+              <li><a href="#" class="gnb__sub-link">적극행정</a></li>
+              <li><a href="#" class="gnb__sub-link">경영공시</a></li>
+            </ul>
+          </li>
+
+          <li class="gnb__item">
+            <a href="#" class="gnb__link">재단소개</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">인사말</a></li>
+              <li><a href="#" class="gnb__sub-link">경영목표</a></li>
+              <li><a href="#" class="gnb__sub-link">연혁</a></li>
+              <li><a href="#" class="gnb__sub-link">CI/BI·캐릭터</a></li>
+              <li><a href="#" class="gnb__sub-link">조직도</a></li>
+              <li><a href="#" class="gnb__sub-link">SNS</a></li>
+              <li><a href="#" class="gnb__sub-link">오시는길</a></li>
+              <li><a href="#" class="gnb__sub-link">유관·협약기관</a></li>
+            </ul>
+          </li>
+
+          <li class="gnb__item">
+            <a href="#" class="gnb__link">문화기부</a>
+            <ul class="gnb__dropdown">
+              <li><a href="#" class="gnb__sub-link">문화CF 안내</a></li>
+              <li><a href="#" class="gnb__sub-link">특별한 기부</a></li>
+              <li><a href="#" class="gnb__sub-link">기부금 사용처</a></li>
+              <li><a href="#" class="gnb__sub-link">기부소식</a></li>
+              <li><a href="#" class="gnb__sub-link">기부하기</a></li>
+              <li><a href="#" class="gnb__sub-link">나의 기부 현황 보기</a></li>
+              <li><a href="#" class="gnb__sub-link">명예의 전당</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- 유틸리티 영역 -->
+      <div class="header__utils">
+
+        <!-- 로그인/회원가입 -->
+        <a href="#" class="utils__login">
+          <i class="fa-regular fa-circle-user" aria-hidden="true"></i>
+          <span>로그인 / 회원가입</span>
+        </a>
+
+        <!-- 검색 버튼 -->
+        <button class="utils__search" type="button" aria-label="검색">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+
+        <!-- 햄버거 메뉴 버튼 -->
+        <button class="utils__hamburger" type="button" aria-label="전체 메뉴" aria-expanded="false" id="hamburgerBtn">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==============================
+       MEGA MENU — 햄버거 전체 메뉴
+  ================================ -->
+  <nav class="mega-menu" id="megaMenu" aria-label="전체 메뉴" aria-hidden="true">
+    <div class="mega-menu__inner">
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">사업안내</span>
+        <ul class="mega-menu__sub">
+          <li><a href="#" class="mega-menu__sub-link">문화예술</a></li>
+          <li><a href="#" class="mega-menu__sub-link">관광사업</a></li>
+          <li><a href="#" class="mega-menu__sub-link">문화누리</a></li>
+          <li><a href="#" class="mega-menu__sub-link">후원사업</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">알림공간</span>
+        <ul class="mega-menu__sub">
+          <li><a href="#" class="mega-menu__sub-link">공지사항</a></li>
+          <li><a href="#" class="mega-menu__sub-link">공모·입찰</a></li>
+          <li><a href="#" class="mega-menu__sub-link">채용공고</a></li>
+          <li><a href="#" class="mega-menu__sub-link">언론보도</a></li>
+          <li><a href="#" class="mega-menu__sub-link">뉴스레터</a></li>
+          <li><a href="#" class="mega-menu__sub-link">관련소식</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">소통공간</span>
+        <ul class="mega-menu__sub">
+          <li><a href="#" class="mega-menu__sub-link">발간자료</a></li>
+          <li><a href="#" class="mega-menu__sub-link">서식자료</a></li>
+          <li><a href="#" class="mega-menu__sub-link">의견청취</a></li>
+          <li><a href="#" class="mega-menu__sub-link">연간행사</a></li>
+          <li><a href="#" class="mega-menu__sub-link">정책대시보드</a></li>
+          <li><a href="#" class="mega-menu__sub-link">클린라인</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">문화공간</span>
+        <ul class="mega-menu__sub">
+          <li><a href="art-hall.html" class="mega-menu__sub-link">충청남도 문화예술회관</a></li>
+          <li><a href="arco-center.html" class="mega-menu__sub-link">아르코공연연습센터@서천</a></li>
+          <li><a href="cn-gallery.html" class="mega-menu__sub-link">CN갤러리</a></li>
+          <li><a href="creation-studio.html" class="mega-menu__sub-link">충남 창작스튜디오</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">정보공개</span>
+        <ul class="mega-menu__sub">
+          <li><a href="#" class="mega-menu__sub-link">정보공개 안내</a></li>
+          <li><a href="#" class="mega-menu__sub-link">인권경영</a></li>
+          <li><a href="#" class="mega-menu__sub-link">윤리경영</a></li>
+          <li><a href="#" class="mega-menu__sub-link">ESG경영</a></li>
+          <li><a href="#" class="mega-menu__sub-link">적극행정</a></li>
+          <li><a href="#" class="mega-menu__sub-link">경영공시</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">재단소개</span>
+        <ul class="mega-menu__sub">
+          <li><a href="#" class="mega-menu__sub-link">인사말</a></li>
+          <li><a href="#" class="mega-menu__sub-link">경영목표</a></li>
+          <li><a href="#" class="mega-menu__sub-link">연혁</a></li>
+          <li><a href="#" class="mega-menu__sub-link">CI/BI·캐릭터</a></li>
+          <li><a href="#" class="mega-menu__sub-link">조직도</a></li>
+          <li><a href="#" class="mega-menu__sub-link">SNS</a></li>
+          <li><a href="#" class="mega-menu__sub-link">오시는길</a></li>
+          <li><a href="#" class="mega-menu__sub-link">유관·협약기관</a></li>
+        </ul>
+      </div>
+
+      <div class="mega-menu__row">
+        <span class="mega-menu__title">문화기부</span>
+        <ul class="mega-menu__sub">
+          <li><a href="#" class="mega-menu__sub-link">문화CF 안내</a></li>
+          <li><a href="#" class="mega-menu__sub-link">특별한 기부</a></li>
+          <li><a href="#" class="mega-menu__sub-link">기부금 사용처</a></li>
+          <li><a href="#" class="mega-menu__sub-link">기부소식</a></li>
+          <li><a href="#" class="mega-menu__sub-link">기부하기</a></li>
+          <li><a href="#" class="mega-menu__sub-link">나의 기부 현황 보기</a></li>
+          <li><a href="#" class="mega-menu__sub-link">명예의 전당</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main id="main">
+
+    <!-- ==============================
+         MAIN SWIPER — 메인 배너 슬라이더
+    ================================ -->
+    <section class="main-swiper reveal" aria-label="메인 슬라이더">
+
+      <!-- 1200px 컨테이너 → 뷰포트 → 트랙 -->
+      <div class="main-swiper__container">
+        <div class="main-swiper__viewport">
+          <div class="main-swiper__track" id="swiperTrack">
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img1.png" alt="메인 슬라이드 1" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img2.png" alt="메인 슬라이드 2" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img3.png" alt="메인 슬라이드 3" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img4.png" alt="메인 슬라이드 4" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img5.png" alt="메인 슬라이드 5" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img6.png" alt="메인 슬라이드 6" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img7.png" alt="메인 슬라이드 7" />
+            </div>
+            <div class="main-swiper__slide">
+              <img src="images/swiper_img8.png" alt="메인 슬라이드 8" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 컨트롤 바 -->
+      <div class="main-swiper__controls">
+
+        <!-- 슬라이드 카운터 -->
+        <div class="swiper-counter" aria-live="polite">
+          <span class="swiper-counter__current" id="swiperCurrent">1</span>
+          <span class="swiper-counter__sep"> / </span>
+          <span class="swiper-counter__total">8</span>
+        </div>
+
+        <!-- 네비게이션 -->
+        <div class="swiper-nav">
+          <button class="swiper-nav__btn" id="swiperPrev" aria-label="이전 슬라이드">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          </button>
+          <div class="swiper-nav__divider"></div>
+          <button class="swiper-nav__btn" id="swiperToggle" aria-label="슬라이드 일시정지">
+            <i class="fa-solid fa-pause" id="swiperToggleIcon" aria-hidden="true"></i>
+          </button>
+          <div class="swiper-nav__divider"></div>
+          <button class="swiper-nav__btn" id="swiperNext" aria-label="다음 슬라이드">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!-- SNS 링크 -->
+        <div class="swiper-sns">
+          <a href="#" class="swiper-sns__link swiper-sns__link--youtube" aria-label="유튜브" target="_blank" rel="noopener">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="swiper-sns__link swiper-sns__link--insta" aria-label="인스타그램" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="swiper-sns__link swiper-sns__link--facebook" aria-label="페이스북" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="swiper-sns__link swiper-sns__link--blog" aria-label="네이버 블로그" target="_blank" rel="noopener">
+            <span style="font-size:0.7rem; font-weight:700; letter-spacing:-0.03em; color:#03C75A;">blog</span>
+          </a>
+          <a href="#" class="swiper-sns__link swiper-sns__link--kakao" aria-label="카카오톡 채널" target="_blank" rel="noopener">
+            <span>ch</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 컨트롤 아래 구분선 -->
+      <div class="main-swiper__divider" aria-hidden="true">
+        <div class="main-swiper__divider-line"></div>
+      </div>
+
+      <!-- 프로그레스 바 -->
+      <div class="main-swiper__progress" aria-hidden="true">
+        <div class="main-swiper__progress-inner">
+          <div class="main-swiper__progress-bar" id="swiperProgress"></div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         HERO — 기관 소개 / 핵심 메시지
+    ================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner inner">
+
+        <div class="hero__content">
+          <!-- 텍스트·CTA -->
+        </div>
+
+        <div class="hero__visual">
+          <!-- 이미지 또는 영상 -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         NEWS SECTION — 새소식 / 공지사항
+    ================================ -->
+    <section class="news-section" aria-labelledby="news-title">
+      <div class="news-section__inner">
+
+        <!-- 탭 헤더 + 주요소식 컨트롤 통합 -->
+        <div class="news-top-bar reveal">
+
+          <!-- 카드 3열 위: 탭 + MORE -->
+          <div class="news-top-bar__left">
+            <ul class="news-tab__list" role="tablist">
+              <li role="presentation">
+                <button class="news-tab__btn is-active" role="tab" data-tab="all">전체</button>
+              </li>
+              <li role="presentation">
+                <button class="news-tab__btn" role="tab" data-tab="notice">공지사항</button>
+              </li>
+              <li role="presentation">
+                <button class="news-tab__btn" role="tab" data-tab="bid">공모·입찰</button>
+              </li>
+              <li role="presentation">
+                <button class="news-tab__btn" role="tab" data-tab="press">언론보도</button>
+              </li>
+              <li role="presentation">
+                <button class="news-tab__btn" role="tab" data-tab="recruit">채용공고</button>
+              </li>
+            </ul>
+            <a href="#" class="news-tab__more">MORE</a>
+          </div>
+
+          <!-- 슬라이드 위: 주요소식(왼) + 버튼(오른) -->
+          <div class="news-top-bar__right">
+            <span class="news-swiper__label">주요소식</span>
+            <div class="news-swiper__nav">
+              <button class="news-swiper__btn" id="newsSwiperPrev" aria-label="이전">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button class="news-swiper__btn" id="newsSwiperToggle" aria-label="일시정지">
+                <i class="fa-solid fa-pause" id="newsSwiperToggleIcon" aria-hidden="true"></i>
+              </button>
+              <button class="news-swiper__btn" id="newsSwiperNext" aria-label="다음">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4열 그리드: 카드 3 + 스와이퍼 1 -->
+        <div class="news-section__grid">
+
+          <!-- 카드 (JS 렌더링) -->
+          <div id="newsCardList" class="news-card"></div>
+          <div id="newsCardList2" class="news-card"></div>
+          <div id="newsCardList3" class="news-card"></div>
+
+          <!-- 주요소식 스와이퍼 -->
+          <div class="news-swiper">
+            <div class="news-swiper__viewport">
+              <div class="news-swiper__track" id="newsSwiperTrack">
+                <div class="news-swiper__slide">
+                  <img src="images/news_img1.png" alt="충남관광캐릭터 워디가디" />
+                  <span class="news-swiper__caption">충남관광캐릭터 워디가디</span>
+                </div>
+                <div class="news-swiper__slide">
+                  <img src="images/news_img2.png" alt="충청도 여행엔 C-Tour Bus" />
+                  <span class="news-swiper__caption">충청도 여행엔 C-Tour Bus</span>
+                </div>
+                <div class="news-swiper__slide">
+                  <img src="images/news_img3.png" alt="2026 연간행사" />
+                  <span class="news-swiper__caption">2026 연간행사</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         CULTURE SECTION — 문화·사업 프로그램
+    ================================ -->
+    <section class="culture-section" aria-labelledby="culture-title">
+      <div class="culture-section__inner">
+
+        <div class="culture-section__header reveal">
+          <div>
+            <p class="culture-section__label">CULTURE & FESTIVAL</p>
+            <h2 class="culture-section__title">충남의 문화예술과 축제를 만나보세요</h2>
+          </div>
+        </div>
+
+        <div class="culture-slider-grid">
+
+          <!-- 문화회관 기획공연 -->
+          <article class="culture-board reveal">
+            <div class="culture-board__head">
+              <h3 class="culture-board__title">문화회관 기획공연</h3>
+              <div class="culture-board__nav">
+                <button class="culture-board__btn" id="performancePrev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="culture-board__btn" id="performanceNext"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="culture-board__viewport">
+              <div class="culture-board__track" id="performanceTrack">
+                <div class="culture-card"><img src="images/culture_01.jpg" alt=""><p>미디어아트 뮤지컬 - 파랑새</p></div>
+                <div class="culture-card"><img src="images/culture_02.jpg" alt=""><p>2026 신년음악회 : 새해 첫 울...</p></div>
+                <div class="culture-card"><img src="images/culture_03.jpg" alt=""><p>2025 송년콘서트 : 트롯 하모니</p></div>
+                <div class="culture-card"><img src="images/culture_04.jpg" alt=""><p>호두까기 인형</p></div>
+                <div class="culture-card"><img src="images/culture_05.jpg" alt=""><p>2025 지니 콘서트</p></div>
+                <div class="culture-card"><img src="images/culture_06.jpg" alt=""><p>충남교향악단 제 207회 정...</p></div>
+                <div class="culture-card"><img src="images/culture_07.jpg" alt=""><p>춤시詩 오딧세이</p></div>
+                <div class="culture-card"><img src="images/culture_08.jpg" alt=""><p>자싱 다차오 필하모닉오케스트라 내한공연</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 축제 -->
+          <article class="culture-board reveal reveal-delay-2">
+            <div class="culture-board__head">
+              <h3 class="culture-board__title">축제</h3>
+              <div class="culture-board__nav">
+                <button class="culture-board__btn" id="festivalPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="culture-board__btn" id="festivalNext"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="culture-board__viewport">
+              <div class="culture-board__track" id="festivalTrack">
+                <div class="culture-card"><img src="images/festival_01.jpg" alt=""><p>성역사인물축제</p></div>
+                <div class="culture-card"><img src="images/festival_02.jpg" alt=""><p>제18회 공주 석장리 구석기축제</p></div>
+                <div class="culture-card"><img src="images/festival_03.jpg" alt=""><p>2026 현충사 달빛야행</p></div>
+                <div class="culture-card"><img src="images/festival_04.jpg" alt=""><p>제20회 서천 자연산 광어 도미 축제</p></div>
+                <div class="culture-card"><img src="images/festival_05.jpg" alt=""><p>제65회 아산 성웅 이순신축제</p></div>
+                <div class="culture-card"><img src="images/festival_06.jpg" alt=""><p>2026 태안국제원예치유박람</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 전시 -->
+          <article class="culture-board reveal reveal-delay-4">
+            <div class="culture-board__head">
+              <h3 class="culture-board__title">전시</h3>
+              <div class="culture-board__nav">
+                <button class="culture-board__btn" id="exhibitionPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="culture-board__btn" id="exhibitionNext"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="culture-board__viewport">
+              <div class="culture-board__track" id="exhibitionTrack">
+                <div class="culture-card"><img src="images/exhibition_01.jpg" alt=""><p>전 : The Wave of Dreams</p></div>
+                <div class="culture-card"><img src="images/exhibition_02.jpg" alt=""><p>풍경은 남고, 기회는 지나고, 잠상은 쌓인다.</p></div>
+                <div class="culture-card"><img src="images/exhibition_03.jpg" alt=""><p>충남창작스튜디오 2기 입주작가 성과보고전</p></div>
+                <div class="culture-card"><img src="images/exhibition_04.jpg" alt=""><p>이행하는 풍경 : A Landscape in Transition</p></div>
+                <div class="culture-card"><img src="images/exhibition_05.jpg" alt=""><p>유기적 관계망 : Organic network</p></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="culture-bottom">
+
+          <div class="youtube-section reveal">
+            <div class="youtube-section__head">
+              <h3>충남문화관광재단 유튜브</h3>
+              <button>+</button>
+            </div>
+            <div class="youtube-video">
+              <iframe width="1410" height="793" src="https://www.youtube.com/embed/eSzv0WO3Joo" title="💖Here, Heart 한반도의 중심은 여기." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="sns-section reveal reveal-delay-2">
+            <div class="sns-section__head">
+              <h3>충남문화관광재단의 새로운 소식을 SNS로 만나보세요!</h3>
+              <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="sns-grid">
+              <img src="images/sns_01.jpg" alt="">
+              <img src="images/sns_02.jpg" alt="">
+              <img src="images/sns_03.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         PROMO SECTION — 뉴스레터 + 문화CF
+    ================================ -->
+    <section class="promo-section">
+      <div class="promo-section__inner">
+
+        <!-- 뉴스레터 카드 -->
+        <div class="promo-card promo-card--newsletter reveal">
+
+          <!-- 회전 원형 텍스트 (카드 배경 뒤) -->
+          <div class="promo-rotating-wrap">
+            <svg class="promo-rotating-text" viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <path id="circle-path" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"/>
+              </defs>
+              <text>
+                <textPath href="#circle-path" startOffset="0%">
+                  LETTER·NEWS·LETTER·NEWS·LETTER·NEWS·LETTER·NEWS·
+                </textPath>
+              </text>
+            </svg>
+          </div>
+
+          <div class="promo-card__left">
+            <h2 class="promo-card__title promo-card__title--blue">만날만날 충남</h2>
+            <p class="promo-card__desc">
+              충남문화관광재단 뉴스레터<br>
+              구독하고 매달 재미있고<br>
+              유익한 충남 소식 받아보세요.
+            </p>
+            <div class="promo-card__btns">
+              <a href="#" class="promo-btn promo-btn--blue">#뉴스레터 구독</a>
+              <a href="#" class="promo-btn promo-btn--dark">#전체보기</a>
+            </div>
+          </div>
+
+          <div class="promo-card__right">
+            <div class="promo-newsletter__imgs">
+              <div class="promo-newsletter__img-wrap">
+                <img src="images/newsletter_01.jpg" alt="만날만날충남 2026년 5월호" class="promo-newsletter__img" />
+                <div class="promo-newsletter__overlay">
+                  <button class="promo-newsletter__plus" aria-label="더보기">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="promo-newsletter__img-wrap">
+                <img src="images/newsletter_02.jpg" alt="만날만날충남 2026년 4월호" class="promo-newsletter__img" />
+                <div class="promo-newsletter__overlay">
+                  <button class="promo-newsletter__plus" aria-label="더보기">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 문화CF 카드 -->
+        <div class="promo-card promo-card--cf reveal reveal-delay-2">
+
+          <div class="promo-card__cf-content">
+            <h2 class="promo-card__title promo-card__title--blue">문화CF</h2>
+            <p class="promo-card__desc">
+              충남 문화예술의 별이 되어주세요.<br>
+              당신의 후원이 예술을 밝힙니다.
+            </p>
+          </div>
+
+          <div class="promo-card__cf-img">
+            <img src="images/culture_cf.png" alt="문화CF 캐릭터" />
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         FAMILY SECTION — 유관기관 / 패밀리 사이트
+    ================================ -->
+    <section class="family-section" aria-labelledby="family-title">
+      <div class="family-section__inner">
+
+        <!-- 상단 텍스트 -->
+        <div class="family-section__head reveal">
+          <p class="family-section__label"># FAMILY SITE</p>
+          <h2 class="family-section__title" id="family-title">
+            충남문화관광재단의<br>패밀리 사이트를 만나보세요!
+          </h2>
+        </div>
+
+        <!-- 사이트 목록 -->
+        <ul class="family-section__list">
+
+          <li class="family-site__item reveal">
+            <a href="#" class="family-site__link" target="_blank" rel="noopener">
+              <span class="family-site__name">충남문화포털</span>
+              <span class="family-site__arrow">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+
+          <li class="family-site__item reveal reveal-delay-1">
+            <a href="#" class="family-site__link" target="_blank" rel="noopener">
+              <span class="family-site__name">충남예술인복지지원센터</span>
+              <span class="family-site__arrow">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+
+          <li class="family-site__item reveal reveal-delay-2">
+            <a href="#" class="family-site__link" target="_blank" rel="noopener">
+              <span class="family-site__name">아르코공연연습센터@서천</span>
+              <span class="family-site__arrow">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+
+          <li class="family-site__item reveal reveal-delay-3">
+            <a href="#" class="family-site__link" target="_blank" rel="noopener">
+              <span class="family-site__name">CN갤러리</span>
+              <span class="family-site__arrow">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==============================
+       FOOTER — 하단 푸터
+  ================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <!-- 좌측: 로고 -->
+      <div class="footer__brand">
+        <a href="/" aria-label="충남문화관광재단 홈">
+          <img src="images/logo_footer.png" alt="충남문화관광재단" />
+        </a>
+      </div>
+
+      <!-- 중앙: 정책 링크 + 주소 + 카피라이트 -->
+      <div class="footer__center">
+
+        <nav class="footer__policy" aria-label="정책 메뉴">
+          <ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">조직 및 담당업무</a></li>
+            <li><a href="#">찾아오시는길</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+          </ul>
+        </nav>
+
+        <address class="footer__info">
+          (재)충남문화관광재단 / 주소 : 32416 충남 예산군 삽교읍 예학로 10-22 / TEL : 041-630-2900 / FAX : 041-338-7963, 4618
+        </address>
+
+        <p class="footer__copy">
+          Copyright ChungNam Culture and Tourism Foundation. All rights reserved.
+        </p>
+
+      </div>
+
+      <!-- 우측: SNS + 패밀리사이트 -->
+      <div class="footer__right">
+
+        <!-- 상단: 패밀리사이트 + SNS 가로 배치 -->
+        <div class="footer__right-top">
+
+          <!-- 패밀리사이트 아코디언 (위로 펼쳐짐) -->
+          <div class="footer__family" id="footerFamily">
+            <button class="footer__family-btn" id="footerFamilyBtn" aria-expanded="false">
+              <span>FAMILY SITE</span>
+              <i class="fa-solid fa-chevron-up" aria-hidden="true" id="footerFamilyIcon"></i>
+            </button>
+            <ul class="footer__family-list" id="footerFamilyList">
+              <li><a href="https://www.chungnam.go.kr" target="_blank" rel="noopener">충청남도청</a></li>
+              <li><a href="https://www.cnctf.or.kr" target="_blank" rel="noopener">충남문화관광재단</a></li>
+              <li><a href="#" target="_blank" rel="noopener">충남문화포털</a></li>
+              <li><a href="#" target="_blank" rel="noopener">충남예술인복지지원센터</a></li>
+              <li><a href="#" target="_blank" rel="noopener">아르코공연연습센터@서천</a></li>
+              <li><a href="#" target="_blank" rel="noopener">CN갤러리</a></li>
+              <li><a href="#" target="_blank" rel="noopener">충남창작스튜디오</a></li>
+            </ul>
+          </div>
+
+          <!-- SNS -->
+          <div class="footer__sns">
+            <a href="#" aria-label="유튜브" class="footer__sns-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="인스타그램" class="footer__sns-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="페이스북" class="footer__sns-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="네이버블로그" class="footer__sns-link"><i class="fa-solid fa-b"></i></a>
+            <a href="#" aria-label="카카오채널" class="footer__sns-link"><i class="fa-regular fa-comment"></i></a>
+          </div>
+
+        </div>
+
+        <!-- 하단: 구글 번역 + 배너 -->
+        <div class="footer__right-bottom">
+
+          <!-- 구글 번역 -->
+          <div class="footer__translate">
+            <select id="googleTranslateSelect" onchange="doTranslate(this.value)">
+              <option value="">Select Language</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="zh-CN">中文(简体)</option>
+              <option value="zh-TW">中文(繁體)</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+              <option value="ru">Русский</option>
+            </select>
+          </div>
+
+          <!-- 웹 접근성 배너 -->
+          <a href="#" class="footer__open-banner" target="_blank" rel="noopener">
+            <img src="images/footer_open_banner.png" alt="웹 접근성 품질인증 마크" />
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==============================
+       팝업 슬라이더
+  ================================ -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+
+      <button class="popup__arrow popup__arrow--prev" id="popupPrev" aria-label="이전">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="popup__arrow popup__arrow--next" id="popupNext" aria-label="다음">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="popup__viewport">
+        <div class="popup__track" id="popupTrack">
+          <div class="popup__slide"><img src="images/popup_01.jpg" alt="팝업 1" /></div>
+          <div class="popup__slide"><img src="images/popup_02.jpg" alt="팝업 2" /></div>
+          <div class="popup__slide"><img src="images/popup_03.jpg" alt="팝업 3" /></div>
+          <div class="popup__slide"><img src="images/popup_04.jpg" alt="팝업 4" /></div>
+          <div class="popup__slide"><img src="images/popup_05.jpg" alt="팝업 5" /></div>
+          <div class="popup__slide"><img src="images/popup_06.jpg" alt="팝업 6" /></div>
+          <div class="popup__slide"><img src="images/popup_07.jpg" alt="팝업 7" /></div>
+        </div>
+      </div>
+
+      <div class="popup__footer">
+        <button class="popup__today" onclick="document.getElementById('popupOverlay').classList.add('is-hidden'); localStorage.setItem('popup_hidden_until', Date.now() + 86400000);">오늘 하루 보지 않기</button>
+        <div class="popup__dots" id="popupDots"></div>
+        <button class="popup__close" onclick="document.getElementById('popupOverlay').classList.add('is-hidden');">닫기</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==============================
+       우측 고정 네비게이션
+  ================================ -->
+  <nav class="side-nav" aria-label="빠른 섹션 이동">
+    <ul class="side-nav__list">
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link" data-label="리더보드">
+          <span class="side-nav__text">리더보드CNO</span>
+        </a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link" data-label="충남방문의해">
+          <span class="side-nav__text">충남방문의해</span>
+        </a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link" data-label="충남예술인복지지원센터">
+          <span class="side-nav__text">충남예술인복지지원센터</span>
+        </a>
+      </li>
+      <li class="side-nav__item">
+        <a href="#" class="side-nav__link" data-label="충남문화재단">
+          <span class="side-nav__text">충남문화재단</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- TOP 버튼 -->
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    <span>TOP</span>
+  </button>
+
+  <!-- ==============================
+       SCRIPTS
+  ================================ -->
+  <!-- Swiper.js (슬라이더) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'ko' },
+        'google_translate_element'
+      );
+    }
+    function doTranslate(lang) {
+      if (!lang) return;
+      const url = 'https://translate.google.com/translate?sl=ko&tl=' + lang + '&u=' + encodeURIComponent(location.href);
+      window.open(url, '_blank');
+    }
+  </script>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>

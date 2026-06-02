@@ -1,0 +1,35 @@
+function isMobileDevice() {
+	// Android, iPhone, iPod
+	if (/Android|iPhone|iPod/i.test(navigator.userAgent)) {
+		return true;
+	}
+	
+	// iPad (구버전)
+	if (navigator.userAgent.indexOf("iPad") > -1) {
+		return true;
+	}
+	
+	// iPad (신버전 - iPadOS 13+) 앱만 체크
+	if (navigator.userAgent.indexOf("Macintosh") > -1 && navigator.userAgent.indexOf("Mobile") > -1) {
+		return true;
+	}
+
+	// Line, Facebook 등 일부 앱은 특징적인 문자열 있음
+	const inAppKeywords = [
+		'FBAN', 'FBAV', // Facebook
+		'Instagram',
+		'Line',
+		'KAKAOTALK',
+		'NAVER'
+	];
+	
+	for (let keyword of inAppKeywords) {
+		if (navigator.userAgent.indexOf(keyword) > -1) {
+			return true;
+		}
+	}
+
+	
+	return false;
+}
+	
