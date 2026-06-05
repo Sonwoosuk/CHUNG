@@ -16,6 +16,7 @@
   <img width="1229" height="720" alt="Image" src="https://github.com/user-attachments/assets/8e8624a5-c76f-447f-85fd-e48d3521a9f0" />
   <img width="1280" height="493" alt="Image" src="https://github.com/user-attachments/assets/002527b7-e218-45fc-9f19-976f66233b9c" />
 - **메인 슬라이더** : 자동 재생, 진행 바, 일시정지·좌우 이동, 터치 스와이프 지원
+  <img width="500" height="156" alt="Image" src="https://github.com/user-attachments/assets/c9c42c04-b0dc-404d-86e5-a4257d64751d" />
 - **뉴스 섹션** : 탭(전체·공지사항·공모입찰·언론보도·채용공고)별 카드 동적 렌더링, 주요소식 이미지 슬라이더
 - **문화 섹션** : 공연·축제·전시 3종 카드 슬라이더, 유튜브 영상 및 SNS 영역
 - **문화공간 서브페이지 4종** : 충청남도 문화예술회관 / 아르코공연연습센터@서천 / CN갤러리 / 충남 창작스튜디오
