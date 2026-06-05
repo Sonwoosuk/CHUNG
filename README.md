@@ -13,8 +13,7 @@
 ## 주요 기능
 
 - **반응형 헤더 / GNB** : 데스크탑 드롭다운 메뉴, 모바일 햄버거 메가메뉴, 스크롤 시 헤더 고정
-- <img width="1229" height="720" alt="Image" src="https://github.com/user-attachments/assets/8e8624a5-c76f-447f-85fd-e48d3521a9f0" />
-
+  <img width="1229" height="720" alt="Image" src="https://github.com/user-attachments/assets/8e8624a5-c76f-447f-85fd-e48d3521a9f0" />
 - **메인 슬라이더** : 자동 재생, 진행 바, 일시정지·좌우 이동, 터치 스와이프 지원
 - **뉴스 섹션** : 탭(전체·공지사항·공모입찰·언론보도·채용공고)별 카드 동적 렌더링, 주요소식 이미지 슬라이더
 - **문화 섹션** : 공연·축제·전시 3종 카드 슬라이더, 유튜브 영상 및 SNS 영역
