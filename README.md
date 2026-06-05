@@ -15,19 +15,25 @@
 - **반응형 헤더 / GNB** : 데스크탑 드롭다운 메뉴, 모바일 햄버거 메가메뉴, 스크롤 시 헤더 고정
   <img width="1229" height="720" alt="Image" src="https://github.com/user-attachments/assets/8e8624a5-c76f-447f-85fd-e48d3521a9f0" />
   <img width="1280" height="493" alt="Image" src="https://github.com/user-attachments/assets/002527b7-e218-45fc-9f19-976f66233b9c" />
+  
 - **메인 슬라이더** : 자동 재생, 진행 바, 일시정지·좌우 이동, 터치 스와이프 지원
   <img width="500" height="156" alt="Image" src="https://github.com/user-attachments/assets/c9c42c04-b0dc-404d-86e5-a4257d64751d" />
+  
 - **뉴스 섹션** : 탭(전체·공지사항·공모입찰·언론보도·채용공고)별 카드 동적 렌더링, 주요소식 이미지 슬라이더
-<img width="500" height="143" alt="Image" src="https://github.com/user-attachments/assets/cc74ddc4-5c79-4cc1-9d49-6370410bc557" />
+  <img width="500" height="143" alt="Image" src="https://github.com/user-attachments/assets/cc74ddc4-5c79-4cc1-9d49-6370410bc557" />
+  
 - **문화 섹션** : 공연·축제·전시 3종 카드 슬라이더, 유튜브 영상 및 SNS 영역
-<img width="500" height="160" alt="Image" src="https://github.com/user-attachments/assets/2aab800f-5fc0-45a0-962e-a15aef7443eb" />
+  <img width="500" height="160" alt="Image" src="https://github.com/user-attachments/assets/2aab800f-5fc0-45a0-962e-a15aef7443eb" />
+  
 - **문화공간 서브페이지 4종** : 충청남도 문화예술회관 / 아르코공연연습센터@서천 / CN갤러리 / 충남 창작스튜디오
-<img width="1340" height="200" alt="Image" src="https://github.com/user-attachments/assets/e2a64418-7064-4569-bac4-9c1eddaafa76" />
-<img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/8ae5af3a-cb57-449c-b257-a2783052bf2b" />
-<img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/5be0ed0e-605e-43d2-8bac-f07ccfc25f99" />
+  <img width="1340" height="200" alt="Image" src="https://github.com/user-attachments/assets/e2a64418-7064-4569-bac4-9c1eddaafa76" />
+  <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/8ae5af3a-cb57-449c-b257-a2783052bf2b" />
+  <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/5be0ed0e-605e-43d2-8bac-f07ccfc25f99" />
+  
 - **서브 네비게이션** : 호버 시 슬라이딩 배경 이동, 모바일에서는 줄바꿈 대응
 - **티켓예매 화면** : 달력 UI, 공연 목록, 결제수단 안내, 할인권종 표(rowspan 병합)
-<img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/53ffa9d5-2efb-47c0-94af-047fdb2496c2" />
+  <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/53ffa9d5-2efb-47c0-94af-047fdb2496c2" />
+ 
 - **스크롤 애니메이션** : WOW.js + animate.css 기반 fadeInUp 등장 효과
 - **팝업** : 자동 슬라이드, 도트 인디케이터, 오늘 하루 보지 않기(localStorage)
 - **반응형 레이아웃** : 데스크탑·태블릿·모바일 대응
@@ -71,6 +77,7 @@ cnctf-skeleton/
 
 ## 회고
 
-처음 해본 클론 코딩이었다. 단순히 화면을 똑같이 따라 그리는 작업이라고 생각했지만, 실제로는 레이아웃을 어떻게 나눌지, 어떤 단위로 컴포넌트를 만들지, 반복되는 요소를 어떻게 공통화할지 끊임없이 고민해야 하는 과정이었다.
-데스크톱 페이지에서 발견하지못한 모바일에서의 문제점이 많아서 수정하는 과정에서 반응형을 고려해서 구조를 잘짜야 한다고 느끼고 생각 할 수있는 시간이였다.
+처음 해본 클론 코딩이었다. 단순히 화면을 똑같이 따라 그리는 작업이라고 생각했지만, 실제로는 레이아웃을 어떻게 나눌지, 어떤 단위로 구조를 만들지 Section을 나눠야 하는지, 반복되는 요소를 어떻게 공통화할지 끊임없이 고민해야 하는 과정이었다.
+데스크톱 페이지에서 발견하지못한 모바일에서의 문제점이 많아서 수정하는 과정에서 반응형을 고려해서 구조를 잘짜야 한다고 느끼고 생각 할 수있는 시간이였다. 
+간단하다고 생각했던 팝업 하나조차 다른 요소들과 충돌을 자주 일으켰고, 어떤 기능도 결코 간단하지 않다는 걸 느꼈다.
 완성된 결과물보다, 막힌 부분을 하나씩 뜯어보며 원인을 찾아가는 과정에서 더 많이 성장했다고 느낀다. 다음에는 구조를 더 체계적으로 분리하고, 처음부터 반응형을 고려한 구조로 시작해 보고 싶다.
