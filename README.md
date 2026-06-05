@@ -27,10 +27,10 @@
   
 - **문화공간 서브페이지 4종** : 충청남도 문화예술회관 / 아르코공연연습센터@서천 / CN갤러리 / 충남 창작스튜디오
   <img width="1340" height="200" alt="Image" src="https://github.com/user-attachments/assets/e2a64418-7064-4569-bac4-9c1eddaafa76" />
-  <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/8ae5af3a-cb57-449c-b257-a2783052bf2b" />
   <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/5be0ed0e-605e-43d2-8bac-f07ccfc25f99" />
   
 - **서브 네비게이션** : 호버 시 슬라이딩 배경 이동, 모바일에서는 줄바꿈 대응
+  <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/8ae5af3a-cb57-449c-b257-a2783052bf2b" />
 - **티켓예매 화면** : 달력 UI, 공연 목록, 결제수단 안내, 할인권종 표(rowspan 병합)
   <img width="500" height="281" alt="Image" src="https://github.com/user-attachments/assets/53ffa9d5-2efb-47c0-94af-047fdb2496c2" />
  
